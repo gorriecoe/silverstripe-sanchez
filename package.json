@@ -1,0 +1,44 @@
+{
+  "name": "silverstripe-sanchez",
+  "displayName": "SilverStripe",
+  "description": "Provides SilverStripe syntax highlighting and snippets to editors such as Atom and VScode.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gorriecoe/silverstripe-sanchez.git"
+  },
+  "version": "0.0.1",
+  "publisher": "Gorrie",
+  "author": "Gorrie",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/gorriecoe/silverstripe-sanchez/issues"
+  },
+  "keywords": [
+    "php",
+    "silverstripe",
+    "html",
+    "template",
+    "snippets",
+    "syntax"
+  ],
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "isset": "^1.0.4",
+    "json-file": "^0.1.0",
+    "parse-config-file": "^1.0.4",
+    "php-parser": "^3.0.1",
+    "read-installed": "^4.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "lint-fix": "eslint **/*.js --fix"
+  }
+}
