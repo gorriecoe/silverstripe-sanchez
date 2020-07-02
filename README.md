@@ -81,7 +81,7 @@ snippets: {
 
 and finally the same in json.
 
-```json
+```
 {
   # Toggle if snippets should include comments.
   # Default: true
@@ -104,7 +104,7 @@ and finally the same in json.
         node: [
           "somenodevendor/somenodepackage"
         ]
-      }
+      },
       body: "function(\n\treturn \"Im a pickle!\";\n)"
     }
   }
