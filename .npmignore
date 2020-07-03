@@ -1,3 +1,6 @@
+# Remove any _dev folders or files from the final package
+*_dev*
+
 .idea
 .gitignore
 .editorconfig

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ssicon</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 10px 20px;
+		}
+
+		.preview {
+			line-height: 2em;
+		}
+
+		.preview__icon {
+			display: inline-block;
+			width: 32px;
+			text-align: center;
+		}
+
+		.icon {
+			display: inline-block;
+			font-size: 16px;
+		}
+
+		@font-face {
+	font-family: "ssicon";
+	src: url("ssicon.eot?6b5b392028001e70813d1270b58e50d7?#iefix") format("embedded-opentype"),
+url("ssicon.woff2?6b5b392028001e70813d1270b58e50d7") format("woff2");
+}
+
+.ssicon {
+	line-height: 1;
+}
+
+.ssicon:before {
+	font-family: ssicon !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.ssicon-icon:before {
+	content: "\f101";
+}
+
+	</style>
+</head>
+<body>
+	<h1>ssicon</h1>
+	<div class="preview">
+		<span class="preview__icon">
+			<span class=" ssicon-icon"></span>
+		</span>
+		<span>icon</span>
+	</div>
+</body>
+</html>

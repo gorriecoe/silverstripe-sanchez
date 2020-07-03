@@ -1,0 +1,20 @@
+@font-face {
+	font-family: "ssicon";
+	src: url("ssicon.eot?d61682dd676855bf29d8141d3aacdd35?#iefix") format("embedded-opentype"),
+url("ssicon.woff2?d61682dd676855bf29d8141d3aacdd35") format("woff2");
+}
+
+.ssicon {
+	line-height: 1;
+}
+
+.ssicon:before {
+	font-family: ssicon !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.ssicon-icon:before {
+	content: "\f101";
+}
