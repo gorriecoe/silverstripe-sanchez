@@ -81,7 +81,7 @@ snippets: {
 
 and finally the same in json.
 
-```json
+```
 {
   // Toggle if snippets should include comments.
   // Default: true
