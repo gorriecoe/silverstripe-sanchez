@@ -44,10 +44,10 @@ snippets:
   "Im a pickle":
     conditions:
       scope: ".text.html.ss"
-      // Required define a list of composer package(s) required to autocomplete this snippet.
+      # Required define a list of composer package(s) required to autocomplete this snippet.
       composer:
         "silverstripe/framework": "3.5-4.0"
-      // Optionally define a list of node package(s) required to autocomplete this snippet.
+      # Optionally define a list of node package(s) required to autocomplete this snippet.
       node:
         - "somenodevendor/somenodepackage"
     body: "function(\n\treturn \"Im a pickle!\";\n)"
@@ -69,10 +69,10 @@ snippets: {
   "Im a pickle":
     conditions:
       scope: ".text.html.ss"
-      // Required define a list of composer package(s) required to autocomplete this snippet.
+      # Required define a list of composer package(s) required to autocomplete this snippet.
       composer:
         "silverstripe/framework": "3.5-4.0"
-      // Optionally define a list of node package(s) required to autocomplete this snippet.
+      # Optionally define a list of node package(s) required to autocomplete this snippet.
       node:
         - "somenodevendor/somenodepackage"
     body: "function(\n\treturn \"Im a pickle!\";\n)"
@@ -81,17 +81,17 @@ snippets: {
 
 and finally the same in json.
 
-```
+```json
 {
-  # Toggle if snippets should include comments.
-  # Default: true
+  // Toggle if snippets should include comments.
+  // Default: true
   comments: false,
 
-  # Toggle if snippets should attempt to inject namespaces automatically.
-  # Default: true
+  // Toggle if snippets should attempt to inject namespaces automatically.
+  // Default: true
   namespacing: true,
 
-  # Define a list of your own snippets.
+  // Define a list of your own snippets.
   snippets: {
     "Im a pickle": {
       conditions: {
