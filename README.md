@@ -314,7 +314,7 @@ getSuggestions(request) {
     // if (this.someKindOfSubscription.comments) {
     //   suggestion.snippet = suggestion.comment + suggestion.body
     // } else {
-    //   suggestion.snippet = suggestion.comment + suggestion.body
+    //   suggestion.snippet = suggestion.body
     // }
     return snippet.suggestion
   })
