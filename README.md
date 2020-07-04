@@ -311,6 +311,11 @@ getSuggestions(request) {
     // suggestion.rightLabelHTML = suggestion.information
     // suggestion.displayText = suggestion.name
     // suggestion.iconHTML =  '<i class="icon-ss"></i>'
+    // if (this.someKindOfSubscription.comments) {
+    //   suggestion.snippet = suggestion.comment + suggestion.body
+    // } else {
+    //   suggestion.snippet = suggestion.comment + suggestion.body
+    // }
     return snippet.suggestion
   })
 }

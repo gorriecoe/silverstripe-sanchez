@@ -8,6 +8,10 @@ const merge = require('deepmerge')
 const { split, version, scope } = require('../utilities')
 const defaultSnippets = require('./defaults')
 
+const defaults = {
+  composerVersion: '0.0+'
+}
+
 /**
  * Store snippets so we don't need to iterate through snippets again.
  */
@@ -67,25 +71,77 @@ const formatName = (value) => {
 }
 
 /**
- * Evaluates the given value  and formats into a singleline or multiline php comment.
- * TODO: Evaluate if scope is ss and output appropriately.
- * @returns String|null
+ * List of common silverstripe comment formats based on there scope.
+ * @returns {Object}
  */
-const formatComment = (value) => {
-  if (!isset(value)) {
+const commentFormat = {
+  'text.html.php': {
+    single: {
+      start: '// ',
+      end: ''
+    },
+    multi: {
+      start: '/**',
+      line: ' * ',
+      end: ' */'
+    }
+  },
+  'text.html.ss': {
+    single: {
+      start: '<!-- ',
+      end: ' --!>'
+    },
+    multi: {
+      start: '<!--',
+      line: '\t',
+      end: '--!>'
+    }
+  },
+  'source.yaml': {
+    single: {
+      start: '# ',
+      end: ''
+    },
+    multi: {
+      start: '# ---',
+      line: '# ',
+      end: '# ---'
+    }
+  }
+}
+
+/**
+ * Evaluates the given value and formats into a singleline or multiline comment.
+ * @param {String} value
+ * @param {String} scope: defaults to php.
+ * @returns String
+ */
+const formatComment = (value = '', scope = 'text.html.php') => {
+  const cf = commentFormat[scope]
+
+  if (!isset(value) || !isset(cf)) {
     return ''
   }
 
   if (/\r|\n/.exec(value)) {
-    // Multline php comment.
+    // Multline.
     return [
-      '/**\n * ',
-      value.trim().replace(/(?:\r\n|\r|\n)/g, '\n * '),
-      '\n */\n'
+      cf.multi.start + '\n' + cf.multi.line,
+      value.trim().replace(
+        /(?:\r\n|\r|\n)/g,
+        '\n' + cf.multi.line
+      ),
+      '\n' + cf.multi.end,
+      '\n'
     ].join('')
   } else {
-    // Singleline php comment.
-    return '// ' + value.trim() + '\n'
+    // Singleline.
+    return [
+      cf.single.start,
+      value.trim(),
+      cf.single.end,
+      '\n'
+    ].join('')
   }
 }
 
@@ -94,12 +150,11 @@ const formatComment = (value) => {
  * @returns String|null
  */
 const formatBody = (snippet) => {
-  const comment = formatComment(snippet.comment),
-    body = snippet.body
+  const body = snippet.body
   if (body.includes('${0}')) {
-    return comment + body
+    return body
   }
-  return comment + body + '${0}'
+  return body + '${0}'
 }
 
 /**
@@ -111,26 +166,24 @@ const formatBody = (snippet) => {
 const formatSnippet = (RAW, snippet) => {
   snippet = snippet ? snippet : RAW
 
-  // Assume some defaults
   let firstComposerName = 'framework',
-    firstComposerVersion = '3.0+',
-    defaultComposerVersion = '0.0+',
-    defaultScope = '.text.html.php, .text.html.ss',
-    comment = formatComment(snippet.comment)
+    firstComposerVersion = '3.0+'
 
-  let { composer, node } = isset(snippet.conditions) ? snippet.conditions : {}
+  const { composer, node } = isset(snippet.conditions) ? snippet.conditions : {}
 
   if (isset(composer)) {
     if (Array.isArray(composer)) {
       firstComposerName = formatName(composer[0])
-      firstComposerVersion = defaultComposerVersion
+      firstComposerVersion = defaults.composerVersion
     } else {
       firstComposerName = formatName(Object.keys(composer)[0])
       firstComposerVersion = Object.values(composer)[0]
     }
   }
 
-  conditionsScope = isset(snippet.conditions.scope) ? snippet.conditions.scope: defaultScope
+  const conditionsScope = scope.format(
+    isset(snippet.conditions.scope) ? snippet.conditions.scope : scope.default
+  )
 
   return {
     name: snippet.name,
@@ -153,14 +206,17 @@ const formatSnippet = (RAW, snippet) => {
         firstComposerName,
         firstComposerVersion
       ),
-      scope: scope.format(conditionsScope),
+      scope: conditionsScope,
       composer: formatPackages(composer),
       node: formatPackages(node)
     },
     suggestion: {
-      snippet: formatBody(snippet),
+      // snippet: formatBody(snippet),
       body: formatBody(snippet),
-      comment: comment,
+      comment: formatComment(
+        snippet.comment,
+        conditionsScope[0]
+      ),
       name: snippet.name,
       information: [
         firstComposerName,
@@ -175,7 +231,7 @@ const formatSnippet = (RAW, snippet) => {
   }
 }
 
-module.exports = (snippets = {}) => {
+module.exports = runme = (snippets = {}) => {
   if (allSnippetsStore) {
     return allSnippetsStore
   }
@@ -186,10 +242,41 @@ module.exports = (snippets = {}) => {
   )
 
   const output = []
+
   for (const name in snippets) {
     if (snippets.hasOwnProperty(name)) {
       const snippet = snippets[name]
       snippet.name = name
+
+      // Check if snippet has multiple scopes and a comment.
+        // In this case we need to create separate variants for each scope.
+      if (
+        isset(snippet.conditions) &&
+        isset(snippet.conditions.scope) &&
+        isset(snippet.comment)
+      ) {
+        const conditionsScope = scope.format(snippet.conditions.scope)
+
+        if (conditionsScope.length >= 2) {
+          conditionsScope.forEach(scope => {
+            if (snippet.hasOwnProperty('variants')) {
+              snippet.variants.push({
+                conditions: {
+                  scope: scope
+                }
+              })
+            } else {
+              snippet.variants = [
+                {
+                  conditions: {
+                    scope: scope
+                  }
+                }
+              ]
+            }
+          })
+        }
+      }
 
       if (isset(snippet.variants)) {
         for (let variant in snippet.variants) {
