@@ -1,5 +1,5 @@
 /**
- * Return a array of locations for namespacing to be placed.1
+ * Return a array of locations for namespacing to be placed.
  */
 
 const engine = require('php-parser')
@@ -18,7 +18,7 @@ const parser = new engine({
 })
 
 /**
- * Finds the specified nodes in order to find the specified kind
+ * Finds the specified node matching the given criteria.
  * @param {Array} nodes
  * @param {Object} criteria
  * @return {Array}
@@ -68,6 +68,7 @@ module.exports = (
       kind: 'useitem',
       name: namespace
     })
+    // Already exists.  Nothing to do here.
     if (isset(node)) {
       return null
     }
@@ -75,6 +76,7 @@ module.exports = (
     node = find(AST, {
       kind: 'usegroup'
     })
+    // If found place at the top of the use group.
     if (isset(node) && node.hasOwnProperty('loc')) {
       return {
         body: body,
@@ -85,23 +87,25 @@ module.exports = (
     node = find(AST, {
       kind: 'namespace'
     })
+
+    // If found place below the namespace.
     if (isset(node) && node.hasOwnProperty('loc')) {
       return {
-        body: body,
+        body: '\n' + body + '\n',
         line: node.loc.start.line + 1
       }
     }
 
+    // Lastly place below '<?php' if nothing else is found.
     node = find(AST, {
       kind: 'program'
     })
     if (isset(node) && node.hasOwnProperty('loc')) {
       return {
-        body: body,
-        line: node.loc.start.line + 1
+        body: '\n' + body + '\n',
+        line: node.loc.start.line
       }
     }
-
     return null
   }).filter(namespace => {
     return isset(namespace)
