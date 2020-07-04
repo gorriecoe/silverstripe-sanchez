@@ -1,6 +1,6 @@
 const CSON = require('cson')
 const settings = require('../src/settings')
-const fs = require('fs');
+const fs = require('fs')
 const path = require('path')
 
 for (const key in settings) {
@@ -18,11 +18,11 @@ for (const key in settings) {
       console.log(result.stack)
     } else {
       fs.writeFile(filePath, result, (error) => {
-        if(error) {
-            return console.log('Convert cson - Failed!', error);
+        if (error) {
+          return console.log('Convert cson - Failed!', error)
         }
-        console.log('Convert cson - Done!');
-    })
+        console.log('Convert cson - Done!')
+      })
     }
   }
 }

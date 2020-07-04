@@ -45,11 +45,11 @@ const find = (AST, criteria) => {
     }
     if (pass) return AST
   }
-  for(const key in AST) {
-      if (AST.hasOwnProperty(key) && AST[key] !== AST) {
-        result = find(AST[key], criteria)
-        if (result) return result
-      }
+  for (const key in AST) {
+    if (AST.hasOwnProperty(key) && AST[key] !== AST) {
+      result = find(AST[key], criteria)
+      if (result) return result
+    }
   }
   return null
 }
@@ -58,7 +58,7 @@ module.exports = (
   contents = '',
   namespaces = []
 ) => {
-  const AST = parser.parseCode(contents);
+  const AST = parser.parseCode(contents)
 
   return namespaces.map(namespace => {
     const body = 'use ' + namespace + ';\n'
@@ -78,7 +78,7 @@ module.exports = (
     if (isset(node) && node.hasOwnProperty('loc')) {
       return {
         body: body,
-        line: node.loc.start.line - 1,
+        line: node.loc.start.line - 1
       }
     }
 
@@ -88,7 +88,7 @@ module.exports = (
     if (isset(node) && node.hasOwnProperty('loc')) {
       return {
         body: body,
-        line: node.loc.start.line + 1,
+        line: node.loc.start.line + 1
       }
     }
 
@@ -98,7 +98,7 @@ module.exports = (
     if (isset(node) && node.hasOwnProperty('loc')) {
       return {
         body: body,
-        line: node.loc.start.line + 1,
+        line: node.loc.start.line + 1
       }
     }
 

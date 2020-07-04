@@ -28,5 +28,3 @@ glob('resources/icons/*.svg', 'nonull', (error, files) => {
     })
   }
 })
-
-
