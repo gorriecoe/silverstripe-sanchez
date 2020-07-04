@@ -16,12 +16,6 @@ Powers [SilverStripe](http://www.silverstripe.org/) syntax highlighting, snippet
 - Includes snippets for addons modules such as [tagfield](https://github.com/silverstripe-labs/silverstripe-tagfield) and [linkable](https://github.com/sheadawson/silverstripe-linkable)
 - .ss templates include scope and conditional indentation.
 
-## Installation
-
-```
-npm i silverstripe-sanchez --save
-```
-
 ## Custom settings and snippets "I'm A Coder, because I write..."
 
 By default SilverStripe Sanchez will read `.silverstripe_sanchez` from your home directory to customise settings and snippets.
@@ -111,6 +105,92 @@ and finally the same in json.
 }
 ```
 
+### Snippet comments
+
+Snippets can have comments automatically inject on completetion of a snippet.
+
+Check this out:
+```yml
+snippets:
+  "Im a pickle":
+    conditions:
+      scope: ".text.html.php",
+      # ...
+    comment: "I'm not arguing,\nI'm explaining why I'm right"
+    body: "public function getSome()\n{\t\n}"
+```
+
+output:
+```php
+<?php
+
+// ...
+class
+  /**
+   * I'm not arguing,
+   * I'm explaining why I'm right
+   */
+  public function getSome(){
+
+  }
+```
+Note: Sanchez checks for `\n` within comment strings and formats it appropriately.
+
+Soooo...
+
+Singleline will look like this
+```php
+// I'm not arguing, I'm explaining why I'm right
+```
+
+### Snippet namespaces
+
+Snippets can also have "use item" namespacing automatically inject on completetion of a snippet.
+
+Check this out:
+```yml
+snippets:
+  "Im a pickle":
+    conditions:
+      scope: ".text.html.php",
+      # ...
+    body: "here::class"
+    namespaces:
+          - "some\\namespace\\here"
+          - "another\\namespace\\here"
+```
+
+output:
+```php
+<?php
+
+use some\namespace\here;
+use another\namespace\there;
+
+// ...
+class
+  // ...
+  private static $db = [
+    'Everywhere' => here::class,
+  ];
+```
+
+### Snippet prefix
+
+Most snippet libraries require that you define a prefix for the autocomplete to match against.
+
+Sanchez just uses the name ie "Im a pickle" and formats it to "imapickle" prefix for convenience.
+
+To apply a custom prefix just define in the snippet.
+
+Here you go
+```yml
+snippets:
+  "Im a pickle":
+    prefix: "idontdomagic"
+```
+
+
 ### Snippet variants
 
 Snippets can have multiple variants based of various conditions.
@@ -119,7 +199,7 @@ Snippets can have multiple variants based of various conditions.
 snippets:
   "Im a pickle":
     conditions:
-      scope: ".text.html.ss"
+      scope: ".text.html.php"
       // Required define a list of composer package(s) required to autocomplete this snippet.
       composer:
         "silverstripe/framework": "3.5-4.0"
@@ -128,23 +208,39 @@ snippets:
         - "somenodevendor/somenodepackage"
     body: "function(\n\treturn \"Im a pickle!\";\n)"
     variants:
-      # A blank variant is required to output the top level snippet.
-      -
+      # Note: Now that variants are enabled for this snippet, the top level is ignored.
+      # So a blank variant is required to output the top level snippet.
+      # This is totally optional, as some cases you may not want to use the top level
+      # for commonalities.
+      - {}
       # The variant below changes the framework version condition, the body and injects namespaces.
-      -
-        conditions:
+      - conditions:
           composer:
             "silverstripe/framework": "4.0+"
         namespaces:
           - "some\\namespace\\here"
           - "another\\namespace\\here"
         body: "function(\n\treturn \"Boom!\";\n)"
-
+      # The variant below changes the scope, framework version condition and the body.
+      - conditions:
+          scope: ".text.html.ss"
+          composer:
+            "silverstripe/framework": "4.0+"
+        body: "Boom!"
+      # Note: All variants will keep the "node" condition as we haven't changed that in any variant.
 ```
 
 ## Develop editor extensions or addons
 
 Using SilverStripe Sanchez to develop an extension or addon for an editor.
+
+### Installation
+
+```
+npm i silverstripe-sanchez --save
+```
+
+### Implementation
 
 Below is a rough example of implementing sanchez.
 
