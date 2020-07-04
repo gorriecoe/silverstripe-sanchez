@@ -95,11 +95,24 @@ module.exports = {
     conditions: {
       scope: ".text.html.php",
       composer: {
-        "silverstripe/framework": "3.0+"
+        "silverstripe/framework": "3.0-4.0"
       }
     },
     comment: "${3:Description}\n\n@package silverstripe\n@subpackage ${4:mysite}",
-    body: "class ${1} extends BuildTask\n{\n\t/**\n\t * @var bool $enabled If set to FALSE, keep it from showing in the list\n\t * and from being executable through URL or CLI.\n\t */\n\tprotected $enabled = true;\n\t\n\t/**\n\t * @var string $title Shown in the overview on the TaskRunner\n\t * HTML or CLI interface. Should be short and concise, no HTML allowed.\n\t */\n\tprotected $title = '${2:${1}}';\n\t\n\t/**\n\t * @var string $description Describe the implications the task has,\n\t * and the changes it makes. Accepts HTML formatting.\n\t */\n\tprotected $description = '${3}';\n\n\t/**\n\t * This method called via the TaskRunner\n\t *\n\t * @param SS_HTTPRequest $request\n\t */\n\tpublic function run($request)\n\t{\n\t\t${0}\n\t}\n}"
+    body: "class ${1} extends BuildTask\n{\n\t/**\n\t * @var bool $enabled If set to FALSE, keep it from showing in the list\n\t * and from being executable through URL or CLI.\n\t */\n\tprotected $enabled = true;\n\t\n\t/**\n\t * @var string $title Shown in the overview on the TaskRunner\n\t * HTML or CLI interface. Should be short and concise, no HTML allowed.\n\t */\n\tprotected $title = '${2:${1}}';\n\t\n\t/**\n\t * @var string $description Describe the implications the task has,\n\t * and the changes it makes. Accepts HTML formatting.\n\t */\n\tprotected $description = '${3}';\n\n\t/**\n\t * This method called via the TaskRunner\n\t *\n\t * @param SS_HTTPRequest $request\n\t */\n\tpublic function run($request)\n\t{\n\t\t${0}\n\t}\n}",
+    variants: [
+      {
+        conditions: {
+          composer: {
+            "silverstripe/framework": "4.0+"
+          }
+        },
+        namespaces: [
+          "SilverStripe\\Dev\\BuildTask"
+        ]
+      },
+      {} // Output top level as variant.
+    ]
   },
   "Menu title": {
     conditions: {
