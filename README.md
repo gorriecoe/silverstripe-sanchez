@@ -350,6 +350,14 @@ deactivate () {
 }
 ```
 
+### Chuck a badge in there
+
+[![Powered by Sanchez](resources/poweredby.png)](https://github.com/gorriecoe/silverstripe-sanchez)
+
+```
+[![Powered by Sanchez](resources/poweredby.png)](https://github.com/gorriecoe/silverstripe-sanchez)
+```
+
 ## Maintainer "I programmed you to believe that."
 
 -   [Gorrie Coe](https://github.com/gorriecoe)
