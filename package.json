@@ -4,12 +4,12 @@
   "description": "Provides SilverStripe syntax highlighting and snippets to editors such as Atom and VScode.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gorriecoe/silverstripe-sanchez.git"
+    "url": "git+https://github.com/gorriecoe/silverstripe-sanchez.git"
   },
   "version": "0.0.1",
   "publisher": "Gorrie",
   "author": "Gorrie",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/gorriecoe/silverstripe-sanchez/issues"
   },
@@ -43,5 +43,7 @@
   "scripts": {
     "lint": "eslint **/*.js",
     "lint-fix": "eslint **/*.js --fix"
-  }
+  },
+  "homepage": "https://github.com/gorriecoe/silverstripe-sanchez#readme",
+  "main": "index.js"
 }
