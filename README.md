@@ -13,14 +13,14 @@ Powers [SilverStripe](http://www.silverstripe.org/) syntax highlighting, snippet
 - Supports 4.\* and 3.\*
 - File icon for .ss
 - Uses full word prefixes so you don't have to remember abbreviations
-- Includes snippets for addons modules such as [tagfield](https://github.com/silverstripe-labs/silverstripe-tagfield) and [linkable](https://github.com/sheadawson/silverstripe-linkable)
+- Includes snippets for addon modules such as [tagfield](https://github.com/silverstripe/silverstripe-tagfield) and [linkable](https://github.com/sheadawson/silverstripe-linkable)
 - .ss templates include scope and conditional indentation.
 
 ## Custom settings and snippets "I'm A Coder, because I write..."
 
 By default SilverStripe Sanchez will read `.silverstripe_sanchez` from your home directory to customise settings and snippets.
 
-This file can be in the any 3 formats, yml, cson or json.
+This file can be in the any 1 of 3 formats, yml, cson or json.
 
 Here is a basic yml example.
 
@@ -107,7 +107,7 @@ and finally the same in json.
 
 ### Snippet comments
 
-Snippets can have comments automatically inject on completetion of a snippet.
+Snippets can have comments automatically inject on completion of a snippet.
 
 Check this out:
 ```yml
@@ -139,15 +139,17 @@ Note: Sanchez checks for `\n` within comment strings and formats it appropriatel
 Soooo...
 
 Singleline will look like this
+
 ```php
 // I'm not arguing, I'm explaining why I'm right
 ```
 
 ### Snippet namespaces
 
-Snippets can also have "use item" namespacing automatically inject on completetion of a snippet.
+Snippets can also have "use item" namespacing automatically inject on completion of a snippet.
 
-Check this out:
+Check this out
+
 ```yml
 snippets:
   "Im a pickle":
@@ -157,10 +159,11 @@ snippets:
     body: "here::class"
     namespaces:
           - "some\\namespace\\here"
-          - "another\\namespace\\here"
+          - "another\\namespace\\there"
 ```
 
-output:
+output
+
 ```php
 <?php
 
@@ -184,12 +187,12 @@ Sanchez just uses the name ie "Im a pickle" and formats it to "imapickle" prefix
 To apply a custom prefix just define in the snippet.
 
 Here you go
+
 ```yml
 snippets:
   "Im a pickle":
     prefix: "idontdomagic"
 ```
-
 
 ### Snippet variants
 
@@ -200,10 +203,10 @@ snippets:
   "Im a pickle":
     conditions:
       scope: ".text.html.php"
-      // Required define a list of composer package(s) required to autocomplete this snippet.
+      # Required define a list of composer package(s) required to autocomplete this snippet.
       composer:
         "silverstripe/framework": "3.5-4.0"
-      // Optionally define a list of node package(s) required to autocomplete this snippet.
+      # Optionally define a list of node package(s) required to autocomplete this snippet.
       node:
         - "somenodevendor/somenodepackage"
     body: "function(\n\treturn \"Im a pickle!\";\n)"
@@ -219,7 +222,7 @@ snippets:
             "silverstripe/framework": "4.0+"
         namespaces:
           - "some\\namespace\\here"
-          - "another\\namespace\\here"
+          - "another\\namespace\\there"
         body: "function(\n\treturn \"Boom!\";\n)"
       # The variant below changes the scope, framework version condition and the body.
       - conditions:
@@ -237,7 +240,7 @@ Using SilverStripe Sanchez to develop an extension or addon for an editor.
 ### Installation
 
 ```
-npm i silverstripe-sanchez --save
+npm i silverstripe-sanchez
 ```
 
 ### Implementation
