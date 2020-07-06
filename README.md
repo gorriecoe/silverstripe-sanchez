@@ -355,10 +355,10 @@ deactivate () {
 
 ### Chuck a badge in there
 
-[![Powered by Sanchez](resources/poweredby.png)](https://github.com/gorriecoe/silverstripe-sanchez)
+[![Powered by Sanchez](https://raw.githubusercontent.com/gorriecoe/silverstripe-sanchez/master/resources/poweredby.png)](https://github.com/gorriecoe/silverstripe-sanchez)
 
 ```
-[![Powered by Sanchez](resources/poweredby.png)](https://github.com/gorriecoe/silverstripe-sanchez)
+[![Powered by Sanchez](https://raw.githubusercontent.com/gorriecoe/silverstripe-sanchez/master/resources/poweredby.png](https://github.com/gorriecoe/silverstripe-sanchez)
 ```
 
 ## Maintainer "I programmed you to believe that."
