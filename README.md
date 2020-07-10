@@ -9,7 +9,7 @@ Powers [SilverStripe](http://www.silverstripe.org/) syntax highlighting, snippet
 - Over 300 built in snippets HOlyy shit.
 - Reads the project composer.lock file to determine the available snippets.
 - Php snippets follow [psr-2 standards](http://www.php-fig.org/psr/psr-2/)
-- Snippets inject use usetItem if available
+- Snippets inject use item if available and possible
 - Supports 4.\* and 3.\*
 - File icon for .ss
 - Uses full word prefixes so you don't have to remember abbreviations
@@ -144,7 +144,7 @@ Singleline will look like this
 // I'm not arguing, I'm explaining why I'm right
 ```
 
-### Snippet usetItems
+### Snippet useItems
 
 Snippets can also have "use item" namespacing automatically inject on completion of a snippet.
 
@@ -157,9 +157,9 @@ snippets:
       scope: ".text.html.php",
       # ...
     body: "here::class"
-    usetItems:
-          - "some\\usetItem\\here"
-          - "another\\usetItem\\there"
+    useItems:
+          - "some\\namespace\\here"
+          - "another\\namespace\\there"
 ```
 
 output
@@ -167,8 +167,8 @@ output
 ```php
 <?php
 
-use some\usetItem\here;
-use another\usetItem\there;
+use some\namespace\here;
+use another\namespace\there;
 
 // ...
 class
@@ -216,13 +216,13 @@ snippets:
       # This is totally optional, as some cases you may not want to use the top level
       # for commonalities.
       - {}
-      # The variant below changes the framework version condition, the body and injects usetItems.
+      # The variant below changes the framework version condition, the body and injects useItems.
       - conditions:
           composer:
             "silverstripe/framework": "4.0+"
-        usetItems:
-          - "some\\usetItem\\here"
-          - "another\\usetItem\\there"
+        useItems:
+          - "some\\namespace\\here"
+          - "another\\namespace\\there"
         body: "function(\n\treturn \"Boom!\";\n)"
       # The variant below changes the scope, framework version condition and the body.
       - conditions:
@@ -302,7 +302,7 @@ getSuggestions(request) {
     // snippet.suggestion.url: string
     // snippet.suggestion.type: string
     // snippet.suggestion.className: string
-    // snippet.suggestion.usetItems: array
+    // snippet.suggestion.useItems: array
     // e.g.
     // const suggestion = snippet.suggestion
     // suggestion.rightLabelHTML = suggestion.information
@@ -324,15 +324,15 @@ onDidInsertSuggestion ({editor, suggestion}) {
   sanchez.getUseItemLoc({
     // Pass through the current editor view contents.
     text: editor.getText(),
-    // Pass the usetItems set specified in the suggestion.
+    // Pass the useItems set specified in the suggestion.
     useItems: suggestion.useItems
-  }).forEach(usetItem => {
+  }).forEach(useItem => {
     editor.setTextInBufferRange(
       [
-        [usetItem.line, 0],
-        [usetItem.line, 0],
+        [useItem.line, 0],
+        [useItem.line, 0],
       ],
-      usetItem.body
+      useItem.body
     )
   })
 }
