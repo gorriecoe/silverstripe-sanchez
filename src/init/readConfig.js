@@ -3,11 +3,10 @@ const merge = require('deepmerge')
 const homedir = require('os').homedir()
 const path = require('path')
 const fs = require('fs')
-const formatSnippets = require('../snippets')
 
 let data = {
   comments: true,
-  namespacing: true,
+  useItems: true,
   snippets: {}
 }
 
@@ -41,8 +40,6 @@ module.exports = (paths = []) => {
       }
     }
   }
-
-  data.snippets = formatSnippets(data.snippets)
 
   return data
 }

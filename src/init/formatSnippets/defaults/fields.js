@@ -104,7 +104,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\HTMLEditor\\HtmlEditorField"
         ]
       }
@@ -126,7 +126,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\AssetAdmin\\Forms\\UploadField"
         ]
       }
@@ -201,7 +201,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\TextField"
         ]
       },
@@ -223,7 +223,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\EmailField"
         ]
       },
@@ -245,7 +245,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\ReadonlyField"
         ]
       },
@@ -267,7 +267,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\NumericField"
         ]
       },
@@ -289,7 +289,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\CurrencyField"
         ]
       },
@@ -311,7 +311,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\NumericField_Readonly"
         ]
       },
@@ -333,7 +333,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\CheckboxField"
         ]
       },
@@ -355,7 +355,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\CheckboxField_Readonly"
         ]
       },
@@ -377,7 +377,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\NullableField"
         ]
       },
@@ -399,7 +399,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\TextareaField"
         ]
       },
@@ -436,7 +436,7 @@ module.exports = {
           }
         },
         body: "TreeDropdownField::create(\n\t'${1:name}ID',\n\t'${2:${1:title}}',\n\t${3:SiteTree::class}\n)",
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\TreeDropdownField",
           "SilverStripe\\CMS\\Model\\SiteTree"
         ]
@@ -463,7 +463,7 @@ module.exports = {
           }
         },
         body: "TreeDropdownField_Readonly::create(\n\t'${1:name}ID',\n\t'${2:${1:title}}',\n\t${3:SiteTree::class}\n)",
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\TreeDropdownField_Readonly",
           "SilverStripe\\CMS\\Model\\SiteTree"
         ]
@@ -493,7 +493,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\DropdownField"
         ]
       },
@@ -524,7 +524,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\LookupField"
         ]
       },
@@ -546,7 +546,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\ListboxField"
         ]
       },
@@ -568,7 +568,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\GroupedDropdownField"
         ]
       },
@@ -590,7 +590,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\OptionsetField"
         ]
       },
@@ -612,7 +612,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\CheckboxSetField"
         ]
       },
@@ -634,7 +634,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\HeaderField"
         ]
       }
@@ -655,7 +655,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\HiddenField"
         ]
       },
@@ -677,7 +677,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\LabelField"
         ]
       },
@@ -699,7 +699,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\GridField\\GridField"
         ]
       },
@@ -721,7 +721,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\GridField\\GridFieldConfig_Base"
         ]
       },
@@ -744,7 +744,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\GridField\\GridFieldConfig_RecordEditor"
         ]
       },
@@ -766,7 +766,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\GridField\\GridFieldConfig_RelationEditor"
         ]
       },
@@ -788,7 +788,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\GridField\\GridFieldConfig_RecordViewer"
         ]
       },
@@ -828,7 +828,7 @@ module.exports = {
             "silverstripe/framework": "3.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\GridField\\GridFieldButtonRow"
         ]
       },
@@ -850,7 +850,7 @@ module.exports = {
             "silverstripe/framework": "3.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\GridField\\GridFieldToolbarHeader"
         ]
       }

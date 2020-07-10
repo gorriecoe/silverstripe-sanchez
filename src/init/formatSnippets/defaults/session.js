@@ -15,7 +15,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Control\\Session"
         ]
       },
@@ -38,7 +38,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Control\\Session"
         ]
       },
@@ -61,7 +61,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Control\\Session"
         ]
       },
@@ -84,7 +84,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Control\\Session"
         ]
       },
@@ -107,7 +107,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Control\\Session"
         ]
       },

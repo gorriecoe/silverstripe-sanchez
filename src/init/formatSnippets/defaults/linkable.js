@@ -7,7 +7,7 @@ module.exports = {
       }
     },
     body: "EmbeddedObjectField::create(\n\t'${1:name}',\n\t'${2:${1:title}}',\n\t${3}\n)",
-    namespaces: [
+    useItems: [
       "Sheadawson\\Linkable\\Models\\EmbeddedObject",
       "Sheadawson\\Linkable\\Forms\\EmbeddedObjectField"
     ]
@@ -20,7 +20,7 @@ module.exports = {
       }
     },
     body: "LinkField::create(\n\t'${1:name}ID',\n\t'${2:${1:title}}'\n)",
-    namespaces: [
+    useItems: [
       "Sheadawson\\Linkable\\Models",
       "Sheadawson\\Linkable\\Forms\\LinkField"
     ]
@@ -33,7 +33,7 @@ module.exports = {
       }
     },
     body: "EmbeddedObject::class",
-    namespaces: [
+    useItems: [
       "Sheadawson\\Linkable\\Models\\EmbeddedObject"
     ]
   },
@@ -45,7 +45,7 @@ module.exports = {
       }
     },
     body: "Link::class",
-    namespaces: [
+    useItems: [
       "Sheadawson\\Linkable\\Models"
     ]
   }

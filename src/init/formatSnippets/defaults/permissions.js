@@ -69,7 +69,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Security\\Permission"
         ]
       }

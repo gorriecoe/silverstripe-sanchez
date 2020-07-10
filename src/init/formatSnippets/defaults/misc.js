@@ -16,7 +16,7 @@ module.exports = {
           }
         },
         body: "Director::baseURL()",
-        namespaces: [
+        useItems: [
           "SilverStripe\\Control\\Director"
         ]
       },
@@ -48,7 +48,7 @@ module.exports = {
           }
         },
         body: "Director::absoluteBaseURL()",
-        namespaces: [
+        useItems: [
           "SilverStripe\\Control\\Director"
         ]
       },
@@ -79,7 +79,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Control\\Director"
         ]
       },
@@ -101,7 +101,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Control\\Director"
         ]
       },
@@ -168,7 +168,7 @@ module.exports = {
           }
         },
         body: "SiteConfig::current_site_config()",
-        namespaces: [
+        useItems: [
           "SilverStripe\\SiteConfig\\SiteConfig"
         ]
       },

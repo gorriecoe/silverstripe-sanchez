@@ -7,7 +7,7 @@ module.exports = {
       }
     },
     body: "Image::class",
-    namespaces: [
+    useItems: [
       "SilverStripe\\Assets\\Image"
     ]
   },

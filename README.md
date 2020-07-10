@@ -9,7 +9,7 @@ Powers [SilverStripe](http://www.silverstripe.org/) syntax highlighting, snippet
 - Over 300 built in snippets HOlyy shit.
 - Reads the project composer.lock file to determine the available snippets.
 - Php snippets follow [psr-2 standards](http://www.php-fig.org/psr/psr-2/)
-- Snippets inject use namespace if available
+- Snippets inject use usetItem if available
 - Supports 4.\* and 3.\*
 - File icon for .ss
 - Uses full word prefixes so you don't have to remember abbreviations
@@ -29,9 +29,9 @@ Here is a basic yml example.
 # Default: true
 comments: false
 
-# Toggle if snippets should attempt to inject namespaces automatically.
+# Toggle if snippets should attempt to inject use item namespacing automatically.
 # Default: true
-namespacing: true
+useItems: true
 
 # Define a list of your own snippets.
 snippets:
@@ -54,9 +54,9 @@ and the same thing in cson (basically the same a yml).
 # Default: true
 comments: false
 
-# Toggle if snippets should attempt to inject namespaces automatically.
+# Toggle if snippets should attempt to inject use item namespacing automatically.
 # Default: true
-namespacing: true
+useItems: true
 
 # Define a list of your own snippets.
 snippets: {
@@ -81,9 +81,9 @@ and finally the same in json.
   // Default: true
   comments: false,
 
-  // Toggle if snippets should attempt to inject namespaces automatically.
+  // Toggle if snippets should attempt to inject use item namespacing automatically.
   // Default: true
-  namespacing: true,
+  useItems: true,
 
   // Define a list of your own snippets.
   snippets: {
@@ -144,7 +144,7 @@ Singleline will look like this
 // I'm not arguing, I'm explaining why I'm right
 ```
 
-### Snippet namespaces
+### Snippet usetItems
 
 Snippets can also have "use item" namespacing automatically inject on completion of a snippet.
 
@@ -157,9 +157,9 @@ snippets:
       scope: ".text.html.php",
       # ...
     body: "here::class"
-    namespaces:
-          - "some\\namespace\\here"
-          - "another\\namespace\\there"
+    usetItems:
+          - "some\\usetItem\\here"
+          - "another\\usetItem\\there"
 ```
 
 output
@@ -167,8 +167,8 @@ output
 ```php
 <?php
 
-use some\namespace\here;
-use another\namespace\there;
+use some\usetItem\here;
+use another\usetItem\there;
 
 // ...
 class
@@ -216,13 +216,13 @@ snippets:
       # This is totally optional, as some cases you may not want to use the top level
       # for commonalities.
       - {}
-      # The variant below changes the framework version condition, the body and injects namespaces.
+      # The variant below changes the framework version condition, the body and injects usetItems.
       - conditions:
           composer:
             "silverstripe/framework": "4.0+"
-        namespaces:
-          - "some\\namespace\\here"
-          - "another\\namespace\\there"
+        usetItems:
+          - "some\\usetItem\\here"
+          - "another\\usetItem\\there"
         body: "function(\n\treturn \"Boom!\";\n)"
       # The variant below changes the scope, framework version condition and the body.
       - conditions:
@@ -248,14 +248,14 @@ npm i silverstripe-sanchez
 Below is a rough example of implementing sanchez.
 
 ```js
-const sanchez = require('silverstripe-sanchez')
+const Enginez = require('silverstripe-sanchez')
 
 // ...
 
 someKindOfSubscription: null,
 
 activate() {
-  this.someKindOfSubscription = sanchez.init({
+  this.someKindOfSubscription = new Enginez({
     // Define paths to folders containing '.silverstripe_sanchez' file for
     // custom config and creating, editing snippets.
     // This automatically looks in your home directory.
@@ -269,7 +269,7 @@ activate() {
     // This is handy for settings from the editor itself and has the highest priority.
     config: {
       comments: true,
-      namespacing: true
+      useItems: true
     },
 
     // Define paths to folders containing 'composer.lock' file to help filter snippets.
@@ -288,16 +288,10 @@ activate() {
 
 getSuggestions(request) {
   return sanchez.conditions(
-    // Full list of available snippets built during activate.
-    this.someKindOfSubscription.snippets,
     // Scope e.g. .text.html.php
     request.scope,
     // Prefix e.g getcmsfields
     request.prefix,
-    // Full list of available composer packages found during activate.
-    this.someKindOfSubscription.composerPackages,
-    // Full list of available node packages found during activate.
-    this.someKindOfSubscription.nodePackages,
   ).map(snippet => {
     // Re-map values here to match the editors required values for snippets.
     // Availables values:
@@ -308,7 +302,7 @@ getSuggestions(request) {
     // snippet.suggestion.url: string
     // snippet.suggestion.type: string
     // snippet.suggestion.className: string
-    // snippet.suggestion.namespaces: array
+    // snippet.suggestion.usetItems: array
     // e.g.
     // const suggestion = snippet.suggestion
     // suggestion.rightLabelHTML = suggestion.information
@@ -326,23 +320,21 @@ getSuggestions(request) {
 // ...
 
 onDidInsertSuggestion ({editor, suggestion}) {
-  if (suggestion.namespaces && this.someKindOfSubscription.namespacing) {
-    // Get a list of locations to apply namespacing
-    sanchez.namespace(
-      // Pass through the current editor view contents.
-      editor.getText(),
-      // Pass the namespaces set specified in the suggestion.
-      suggestion.namespaces
-    ).forEach(namespace => {
-      editor.setTextInBufferRange(
-        [
-          [namespace.line, 0],
-          [namespace.line, 0],
-        ],
-        namespace.body
-      )
-    })
-  }
+  // Get a list of locations to apply use items.
+  sanchez.getUseItemLoc({
+    // Pass through the current editor view contents.
+    text: editor.getText(),
+    // Pass the usetItems set specified in the suggestion.
+    useItems: suggestion.useItems
+  }).forEach(usetItem => {
+    editor.setTextInBufferRange(
+      [
+        [usetItem.line, 0],
+        [usetItem.line, 0],
+      ],
+      usetItem.body
+    )
+  })
 }
 
 // ...

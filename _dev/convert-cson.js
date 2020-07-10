@@ -1,5 +1,5 @@
 const CSON = require('cson')
-const settings = require('../src/settings')
+const settings = require('./settings')
 const fs = require('fs')
 const path = require('path')
 

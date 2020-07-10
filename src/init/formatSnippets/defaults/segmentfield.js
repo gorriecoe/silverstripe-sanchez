@@ -15,7 +15,7 @@ module.exports = {
             "silverstripe/segment-field": "2.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\SegmentField"
         ]
       }

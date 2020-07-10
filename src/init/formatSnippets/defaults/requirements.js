@@ -27,7 +27,7 @@ module.exports = {
           }
         },
         body: "Requirements::themedJavascript('${1}');",
-        namespaces: [
+        useItems: [
           "SilverStripe\\View\\Requirements"
         ]
       }
@@ -64,7 +64,7 @@ module.exports = {
           }
         },
         body: "Requirements::themedCSS('${1}');",
-        namespaces: [
+        useItems: [
           "SilverStripe\\View\\Requirements"
         ]
       }
@@ -98,7 +98,7 @@ module.exports = {
           }
         },
         body: "Requirements::javascript('${1}');",
-        namespaces: [
+        useItems: [
           "SilverStripe\\View\\Requirements"
         ]
       }
@@ -132,7 +132,7 @@ module.exports = {
           }
         },
         body: "Requirements::css('${1}');",
-        namespaces: [
+        useItems: [
           "SilverStripe\\View\\Requirements"
         ]
       }
@@ -153,7 +153,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\View\\Requirements"
         ]
       }

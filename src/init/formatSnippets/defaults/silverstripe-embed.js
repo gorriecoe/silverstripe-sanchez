@@ -7,7 +7,7 @@ module.exports = {
       ]
     },
     body: "Embeddable::class",
-    namespaces: [
+    useItems: [
       "gorriecoe\\Embed\\Extensions\\Embeddable"
     ]
   }

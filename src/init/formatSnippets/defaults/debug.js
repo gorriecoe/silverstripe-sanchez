@@ -14,7 +14,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Dev\\Debug"
         ]
       },
@@ -36,7 +36,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Dev\\Debug"
         ]
       },
@@ -67,7 +67,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Dev\\Debug"
         ]
       },
@@ -86,7 +86,7 @@ module.exports = {
           }
         },
         body: "Injector::inst()->get(LoggerInterface::class)->${2:error}('${1}');",
-        namespaces: [
+        useItems: [
           "Psr\\Log\\LoggerInterface",
           "SilverStripe\\Core\\Injector\\Injector"
         ]

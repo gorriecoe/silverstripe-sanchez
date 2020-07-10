@@ -15,7 +15,7 @@ module.exports = {
             "silverstripe/cms": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\CMS\\Model\\SiteTree"
         ]
       },
@@ -38,7 +38,7 @@ module.exports = {
             "silverstripe/cms": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\CMS\\Controllers\\ContentController"
         ]
       },
@@ -61,7 +61,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\ORM\\DataObject"
         ]
       },
@@ -84,7 +84,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Admin\\ModelAdmin"
         ]
       },
@@ -107,7 +107,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Dev\\BuildTask"
         ]
       },
@@ -439,7 +439,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\FieldList",
           "SilverStripe\\Forms\\Tab",
           "SilverStripe\\Forms\\TabSet"
@@ -474,7 +474,7 @@ module.exports = {
             "silverstripe/framework": "4.0+"
           }
         },
-        namespaces: [
+        useItems: [
           "SilverStripe\\Forms\\FieldList"
         ]
       }

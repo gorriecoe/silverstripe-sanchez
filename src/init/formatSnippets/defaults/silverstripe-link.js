@@ -7,7 +7,7 @@ module.exports = {
       ]
     },
     body: "Link::class",
-    namespaces: [
+    useItems: [
       "gorriecoe\\Link\\Models\\Link"
     ]
   },
@@ -19,7 +19,7 @@ module.exports = {
       ]
     },
     body: "LinkField::create(\n\t'${1:name}',\n\t'${2:${1:title}}',\n\t${3:$this}\n)",
-    namespaces: [
+    useItems: [
       "gorriecoe\\Link\\Models\\Link",
       "gorriecoe\\LinkField\\LinkField"
     ]

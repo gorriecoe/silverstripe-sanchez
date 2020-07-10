@@ -12,7 +12,7 @@ module.exports = {
         composer: {
           "bummzack/sortablefile": "2.0+"
         },
-        namespaces: [
+        useItems: [
           "Bummzack\\SortableFile\\Forms\\SortableUploadField"
         ]
       },

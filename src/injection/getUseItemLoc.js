@@ -1,5 +1,5 @@
 /**
- * Return a array of locations for namespacing to be placed.
+ * Return a array of locations for use item namespacing to be placed.
  */
 
 const engine = require('php-parser')
@@ -56,17 +56,22 @@ const find = (AST, criteria) => {
 
 module.exports = (
   contents = '',
-  namespaces = []
+  useItems = [],
+  allowUseItems = true
 ) => {
+  if (!allowUseItems) {
+    return []
+  }
+
   const AST = parser.parseCode(contents)
 
-  return namespaces.map(namespace => {
-    const body = 'use ' + namespace + ';\n'
+  return useItems.map(useItem => {
+    const body = 'use ' + useItem + ';\n'
     let node = null
 
     node = find(AST, {
       kind: 'useitem',
-      name: namespace
+      name: useItem
     })
     // Already exists.  Nothing to do here.
     if (isset(node)) {
@@ -85,10 +90,10 @@ module.exports = (
     }
 
     node = find(AST, {
-      kind: 'namespace'
+      kind: 'useItem'
     })
 
-    // If found place below the namespace.
+    // If found place below the useItem.
     if (isset(node) && node.hasOwnProperty('loc')) {
       return {
         body: '\n' + body + '\n',
@@ -107,7 +112,7 @@ module.exports = (
       }
     }
     return null
-  }).filter(namespace => {
-    return isset(namespace)
+  }).filter(useItem => {
+    return isset(useItem)
   })
 }
