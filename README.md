@@ -144,7 +144,7 @@ Singleline will look like this
 // I'm not arguing, I'm explaining why I'm right
 ```
 
-### Snippet useItems
+### Snippet use items
 
 Snippets can also have "use item" namespacing automatically inject on completion of a snippet.
 
