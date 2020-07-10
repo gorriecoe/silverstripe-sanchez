@@ -2,16 +2,19 @@
 
 # SilverStripe Sanchez
 
-Powers [SilverStripe](http://www.silverstripe.org/) syntax highlighting, snippets, functions and various resources for editors such as [Atom](https://atom.io/packages/atom-silverstripe) and [VSCode](https://marketplace.visualstudio.com/items?itemName=gorriecoe.silverstripe).
+Powers [SilverStripe](http://www.silverstripe.org/) syntax highlighting, snippets, functions and various resources for editors.
+
+- [Atom](https://atom.io/packages/atom-silverstripe)
+- [VSCode](https://marketplace.visualstudio.com/items?itemName=adrianhumphreys.silverstripe)
 
 ## Features
 
-- Over 300 built in snippets HOlyy shit.
+- Over 300 built in snippets, HOlyy shit.
 - Reads the project composer.lock file to determine the available snippets.
 - Php snippets follow [psr-2 standards](http://www.php-fig.org/psr/psr-2/)
 - Snippets inject use item if available and possible.
 - Supports 4.\* and 3.\*.
-- File icon for .ss
+- File icon for .ss.
 - Uses full word prefixes so you don't have to remember abbreviations.
 - Includes snippets for addon modules such as [tagfield](https://github.com/silverstripe/silverstripe-tagfield) and [linkable](https://github.com/sheadawson/silverstripe-linkable).
 - .ss templates include scope and conditional indentation.
@@ -252,10 +255,10 @@ const Enginez = require('silverstripe-sanchez')
 
 // ...
 
-someKindOfSubscription: null,
+sanchez: null,
 
 activate() {
-  this.someKindOfSubscription = new Enginez({
+  sanchez = new Enginez({
     // Define paths to folders containing '.silverstripe_sanchez' file for
     // custom config and creating, editing snippets.
     // This automatically looks in your home directory.
@@ -287,7 +290,7 @@ activate() {
 // ...
 
 getSuggestions(request) {
-  return sanchez.conditions(
+  return sanchez.snippets(
     // Scope e.g. .text.html.php
     request.scope,
     // Prefix e.g getcmsfields
@@ -308,7 +311,7 @@ getSuggestions(request) {
     // suggestion.rightLabelHTML = suggestion.information
     // suggestion.displayText = suggestion.name
     // suggestion.iconHTML =  '<i class="icon-ss"></i>'
-    // if (this.someKindOfSubscription.comments) {
+    // if (this.sanchez.comments) {
     //   suggestion.snippet = suggestion.comment + suggestion.body
     // } else {
     //   suggestion.snippet = suggestion.body
@@ -341,7 +344,7 @@ onDidInsertSuggestion ({editor, suggestion}) {
 
 deactivate () {
   // Do something to dispose of it.
-  this.someKindOfSubscription.diposeMeOrSomething()
+  this.sanchez.diposeMeOrSomething()
 }
 ```
 
