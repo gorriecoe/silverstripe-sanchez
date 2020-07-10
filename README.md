@@ -9,11 +9,11 @@ Powers [SilverStripe](http://www.silverstripe.org/) syntax highlighting, snippet
 - Over 300 built in snippets HOlyy shit.
 - Reads the project composer.lock file to determine the available snippets.
 - Php snippets follow [psr-2 standards](http://www.php-fig.org/psr/psr-2/)
-- Snippets inject use item if available and possible
-- Supports 4.\* and 3.\*
+- Snippets inject use item if available and possible.
+- Supports 4.\* and 3.\*.
 - File icon for .ss
-- Uses full word prefixes so you don't have to remember abbreviations
-- Includes snippets for addon modules such as [tagfield](https://github.com/silverstripe/silverstripe-tagfield) and [linkable](https://github.com/sheadawson/silverstripe-linkable)
+- Uses full word prefixes so you don't have to remember abbreviations.
+- Includes snippets for addon modules such as [tagfield](https://github.com/silverstripe/silverstripe-tagfield) and [linkable](https://github.com/sheadawson/silverstripe-linkable).
 - .ss templates include scope and conditional indentation.
 
 ## Custom settings and snippets "I'm A Coder, because I write..."
