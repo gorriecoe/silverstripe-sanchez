@@ -147,6 +147,34 @@ Singleline will look like this
 // I'm not arguing, I'm explaining why I'm right
 ```
 
+### Snippet body
+
+The body of a snippet is the content being inserted to the editor on completion of the snippet and can use special constructs to control cursors.
+
+```yml
+snippets:
+  "Im a pickle":
+    body: "function(\n\treturn \"I'm a pickle\";\n)"
+```
+
+### Snippet tabstops
+
+With tabstops, you can make the editor cursor move inside a snippet. Use `${1}`, `${2}` to specify cursor locations. The number is the order in which tabstops will be visited, whereas `${0}` denotes the final cursor position (if the this is not defined then the end of the body is the final position).  Multiple occurrences of the same tabstop are linked and updated in sync.
+
+
+```yml
+snippets:
+  "Im a pickle":
+    conditions:
+      scope: ".text.html.php",
+      # ...
+    body: "function(\n\treturn \"${1}\";\n)"
+```
+
+### Snippet placeholders
+
+Placeholders are tabstops with values, like `${1:foo}`. The placeholder text will be inserted and selected such that it can be easily changed.
+
 ### Snippet use items
 
 Snippets can also have "use item" namespacing automatically inject on completion of a snippet.
