@@ -9,11 +9,20 @@ module.exports = class {
     this.data = init(options)
   }
 
-  snippets ({scope, prefix}) {
+  get allSnippets() {
+    return this.data.snippets
+  }
+
+  snippets ({
+    scope,
+    prefix,
+    language
+  }) {
     return snippets(
       this.data.snippets,
       scope,
       prefix,
+      language,
       this.data.composerPackages,
       this.data.nodePackages
     )
