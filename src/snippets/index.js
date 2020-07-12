@@ -15,7 +15,7 @@ module.exports = (
     const conditions = snippet.conditions
     return (scope == true || matchScope(conditions.scope, scope)) &
           (prefix == true || matchPrefix(conditions.prefix, prefix)) &
-          (language == true || matchLanguage(conditions.scope, language)) &
+          (language == true || matchLanguage(conditions.language, language)) &
           matchPackages(conditions.composer, composerPackages) &
           matchPackages(conditions.node, nodePackages)
   })

@@ -5,7 +5,7 @@
 
 const isset = require('isset')
 const merge = require('deepmerge')
-const { split, version, scope } = require('../../utilities')
+const { split, version, scope, language } = require('../../utilities')
 const defaultSnippets = require('./defaults')
 
 const defaults = {
@@ -185,6 +185,10 @@ const formatSnippet = (RAW, snippet) => {
     isset(snippet.conditions.scope) ? snippet.conditions.scope : scope.default
   )
 
+  const conditionsLanguage = language.format(
+    isset(snippet.conditions.language) ? snippet.conditions.language : snippet.conditions.scope
+  )
+
   return {
     name: snippet.name,
 
@@ -207,6 +211,7 @@ const formatSnippet = (RAW, snippet) => {
         firstComposerVersion
       ),
       scope: conditionsScope,
+      language: conditionsLanguage,
       composer: formatPackages(composer),
       node: formatPackages(node)
     },
@@ -231,7 +236,7 @@ const formatSnippet = (RAW, snippet) => {
   }
 }
 
-module.exports = runme = (snippets = {}) => {
+module.exports = (snippets = {}) => {
   if (allSnippetsStore) {
     return allSnippetsStore
   }
