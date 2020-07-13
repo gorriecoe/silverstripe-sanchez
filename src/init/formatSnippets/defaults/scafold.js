@@ -142,7 +142,7 @@ module.exports = {
       }
     },
     comment: "Defines extension names and parameters to be applied\n to this object upon construction.\n @var array",
-    body: "private static $extensions = [\n\t'${1}',\n];"
+    body: "private static \\$extensions = [\n\t'${1}',\n];"
   },
   "Singular name": {
     conditions: {
@@ -323,7 +323,7 @@ module.exports = {
       }
     },
     comment: "Defines the allowed child page types\n@var array",
-    body: "private static $allowed_children = [\n\t'${1}'\n];"
+    body: "private static \\$allowed_children = [\n\t'${1}'\n];"
   },
   "Can be root": {
     conditions: {
@@ -343,7 +343,7 @@ module.exports = {
       }
     },
     comment: "Defines methods that can be called directly\n@var array",
-    body: "private static $allowed_actions = [\n\t'${1}' => ${2:true}\n];"
+    body: "private static \\$allowed_actions = [\n\t'${1}' => ${2:true}\n];"
   },
   "URL handlers": {
     conditions: {
@@ -353,7 +353,7 @@ module.exports = {
       }
     },
     comment: "Defines URL patterns.\n@var array",
-    body: "private static $url_handlers = [\n\t'${1}' => '${2}'\n];"
+    body: "private static \\$url_handlers = [\n\t'${1}' => '${2}'\n];"
   },
   "Hide ancestor": {
     conditions: {
