@@ -9,7 +9,7 @@ Powers [SilverStripe](http://www.silverstripe.org/) syntax highlighting, snippet
 
 ## Features
 
-- Over 300 built in snippets, HOlyy shit.
+- Over 300 built in snippets, HOlyy sh!t.
 - Reads the project composer.lock file to determine the available snippets.
 - Php snippets follow [psr-2 standards](http://www.php-fig.org/psr/psr-2/)
 - Snippets inject use item if available and possible.
@@ -19,11 +19,13 @@ Powers [SilverStripe](http://www.silverstripe.org/) syntax highlighting, snippet
 - Includes snippets for addon modules such as [tagfield](https://github.com/silverstripe/silverstripe-tagfield) and [linkable](https://github.com/sheadawson/silverstripe-linkable).
 - .ss templates include scope and conditional indentation.
 
-## Custom settings and snippets "I'm A Coder, because I write..."
+## Custom settings and snippets
+
+"I'm A Coder, because I write..."
 
 By default SilverStripe Sanchez will read `.silverstripe_sanchez` from your home directory to customise settings and snippets.
 
-This file can be in the any 1 of 3 formats, yml, cson or json.
+This file can be in any 1 of 3 formats, yml, cson or json.
 
 Here is a basic yml example.
 
@@ -50,7 +52,7 @@ snippets:
     body: "function(\n\treturn \"Im a pickle!\";\n)"
 ```
 
-and the same thing in cson (basically the same a yml).
+and the same thing in cson (basically the same as yml).
 
 ```cson
 # Toggle if snippets should include comments.
@@ -78,7 +80,7 @@ snippets: {
 
 and finally the same in json.
 
-```
+```jsonc
 {
   // Toggle if snippets should include comments.
   // Default: true
@@ -108,9 +110,37 @@ and finally the same in json.
 }
 ```
 
+### Snippet body
+
+The body of a snippet is the content being inserted to the editor on completion of the snippet and can use special constructs to control cursors.
+
+```yml
+snippets:
+  "Im a pickle":
+    body: "function(\n\treturn \"I'm a pickle\";\n)"
+```
+
+### Snippet tab stops
+
+With tab stops, you can make the editor cursor move inside a snippet. Use `${1}`, `${2}` to specify cursor locations. The number is the order in which tab stops will be visited, whereas `${0}` denotes the final cursor position (if the this is not defined then the end of the body is the final position).  Multiple occurrences of the same tabstop are linked and updated in sync.
+
+
+```yml
+snippets:
+  "Im a pickle":
+    conditions:
+      scope: ".text.html.php",
+      # ...
+    body: "function(\n\treturn \"${1}\";\n)"
+```
+
+### Snippet placeholders
+
+Placeholders are tab stops with values, like `${1:foo}`. The placeholder text will be inserted and selected such that it can be easily changed.
+
 ### Snippet comments
 
-Snippets can have comments automatically inject on completion of a snippet.
+Snippets can have comments automatically inject on completion of a snippet.  Honoring the language syntax.
 
 Check this out:
 ```yml
@@ -139,41 +169,18 @@ class
 ```
 Note: Sanchez checks for `\n` within comment strings and formats it appropriately.
 
-Soooo...
-
-Singleline will look like this
+Soooo... singleline will look like this.
 
 ```php
 // I'm not arguing, I'm explaining why I'm right
 ```
 
-### Snippet body
+As mentioned above sanchez honors the language syntax as well, soooo... if the comment was injected into a ss template.
+It will look like this.
 
-The body of a snippet is the content being inserted to the editor on completion of the snippet and can use special constructs to control cursors.
-
-```yml
-snippets:
-  "Im a pickle":
-    body: "function(\n\treturn \"I'm a pickle\";\n)"
+```html
+<%-- I'm not arguing, I'm explaining why I'm right --%>
 ```
-
-### Snippet tabstops
-
-With tabstops, you can make the editor cursor move inside a snippet. Use `${1}`, `${2}` to specify cursor locations. The number is the order in which tabstops will be visited, whereas `${0}` denotes the final cursor position (if the this is not defined then the end of the body is the final position).  Multiple occurrences of the same tabstop are linked and updated in sync.
-
-
-```yml
-snippets:
-  "Im a pickle":
-    conditions:
-      scope: ".text.html.php",
-      # ...
-    body: "function(\n\treturn \"${1}\";\n)"
-```
-
-### Snippet placeholders
-
-Placeholders are tabstops with values, like `${1:foo}`. The placeholder text will be inserted and selected such that it can be easily changed.
 
 ### Snippet use items
 
@@ -266,7 +273,7 @@ snippets:
 
 ## Develop editor extensions or addons
 
-Using SilverStripe Sanchez to develop an extension or addon for an editor.
+Using SilverStripe Sanchez to develop an extension or addon for a editor.
 
 ### Installation
 
@@ -283,7 +290,7 @@ const Enginez = require('silverstripe-sanchez')
 
 // ...
 
-sanchez: null,
+sanchez = null,
 
 activate() {
   sanchez = new Enginez({
@@ -318,13 +325,21 @@ activate() {
 // ...
 
 getSuggestions(request) {
-  return sanchez.snippets(
+  return sanchez.snippets({
+    // Define optional filters.
+
     // Scope e.g. .text.html.php
-    request.scope,
+    scope: request.scope,
+
     // Prefix e.g getcmsfields
-    request.prefix,
-  ).map(snippet => {
+    prefix: request.prefix,
+
+    // Language silverstripe, ss, php or yml
+    language: request.language
+
+  }).map(snippet => {
     // Re-map values here to match the editors required values for snippets.
+
     // Availables values:
     // snippet.suggestion.body: string
     // snippet.suggestion.name: string
@@ -334,6 +349,7 @@ getSuggestions(request) {
     // snippet.suggestion.type: string
     // snippet.suggestion.className: string
     // snippet.suggestion.useItems: array
+
     // e.g.
     // const suggestion = snippet.suggestion
     // suggestion.rightLabelHTML = suggestion.information
@@ -344,6 +360,7 @@ getSuggestions(request) {
     // } else {
     //   suggestion.snippet = suggestion.body
     // }
+
     return snippet.suggestion
   })
 }
@@ -355,8 +372,10 @@ onDidInsertSuggestion ({editor, suggestion}) {
   sanchez.getUseItemLoc({
     // Pass through the current editor view contents.
     text: editor.getText(),
+
     // Pass the useItems set specified in the suggestion.
     useItems: suggestion.useItems
+
   }).forEach(useItem => {
     editor.setTextInBufferRange(
       [
@@ -372,7 +391,7 @@ onDidInsertSuggestion ({editor, suggestion}) {
 
 deactivate () {
   // Do something to dispose of it.
-  this.sanchez.diposeMeOrSomething()
+  sanchez.diposeMeOrSomething()
 }
 ```
 
@@ -384,6 +403,8 @@ deactivate () {
 [![Powered by Sanchez](https://raw.githubusercontent.com/gorriecoe/silverstripe-sanchez/master/resources/poweredby.png](https://github.com/gorriecoe/silverstripe-sanchez)
 ```
 
-## Maintainer "I programmed you to believe that."
+## Maintainer
+
+"I programmed you to believe that."
 
 -   [Gorrie Coe](https://github.com/gorriecoe)
