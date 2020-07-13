@@ -377,11 +377,15 @@ module.exports = {
     },
     variants: [
       {
-        scope: ".text.html.ss",
+        conditions: {
+          scope: ".text.html.ss"
+        },
         body: "Count"
       },
       {
-        scope: ".text.html.php",
+        conditions: {
+          scope: ".text.html.php"
+        },
         body: "Count()"
       }
     ]
@@ -466,11 +470,15 @@ module.exports = {
     },
     variants: [
       {
-        scope: ".text.html.ss",
+        conditions: {
+          scope: ".text.html.ss"
+        },
         body: "EscapeXML"
       },
       {
-        scope: ".text.html.php",
+        conditions: {
+          scope: ".text.html.php"
+        },
         body: "EscapeXML()"
       }
     ]
