@@ -487,7 +487,7 @@ module.exports = {
         "silverstripe/framework": "3.0+"
       }
     },
-    comment: "@param Int $id\n@param FieldList $fields\n@return Form",
-    body: "public function getEditForm($id = null, $fields = null)\n{\n\t\\$form = parent::getEditForm($id, $fields);\n\t${0}\n\treturn \\$form;\n}"
+    comment: "@param Int \\$id\n@param FieldList \\$fields\n@return Form",
+    body: "public function getEditForm(\\$id = null, \\$fields = null)\n{\n\t\\$form = parent::getEditForm(\\$id, \\$fields);\n\t${0}\n\treturn \\$form;\n}"
   }
 }
