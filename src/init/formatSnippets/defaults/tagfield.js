@@ -15,6 +15,6 @@ module.exports = {
         "silverstripe/tagfield"
       ]
     },
-    body: "StringTagField::create(\n\t'${1:name}',\n\t'${2:${1:title}}',\n\t${3:[]},\n\texplode(',', $this->${1:name})\n)"
+    body: "StringTagField::create(\n\t'${1:name}',\n\t'${2:${1:title}}',\n\t${3:[]},\n\texplode(',', \\$this->${1:name})\n)"
   }
 }

@@ -7,6 +7,6 @@ module.exports = {
       ]
     },
     comment: "Defines db fields that are translatable.\n@var array",
-    body: "private static $translate = [\n\t'${1}',\n];"
+    body: "private static \\$translate = [\n\t'${1}',\n];"
   }
 }
