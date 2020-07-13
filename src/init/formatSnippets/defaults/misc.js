@@ -110,40 +110,72 @@ module.exports = {
   },
   "Current Member": {
     prefix: "member",
-    conditions: {
-      scope: ".text.html.ss",
-      composer: {
-        "silverstripe/framework": "3.0+"
-      }
-    },
     variants: [
       {
-        scope: ".text.html.ss",
+        conditions: {
+          scope: ".text.html.ss",
+          composer: {
+            "silverstripe/framework": "3.0+"
+          }
+        },
         body: "CurrentMember"
       },
       {
-        scope: ".text.html.php",
+        conditions: {
+          scope: ".text.html.php",
+          composer: {
+            "silverstripe/framework": "3.0-4.0"
+          }
+        },
         body: "Member::currentUser()"
+      },
+      {
+        conditions: {
+          scope: ".text.html.php",
+          composer: {
+            "silverstripe/framework": "4.0+"
+          }
+        },
+        body: "Member::currentUser()",
+        useItems: [
+          "SilverStripe\\Security\\Member"
+        ]
       }
     ]
   },
   "Current Member ID": {
     prefix: "memberid",
-    conditions: {
-      scope: ".text.html.ss",
-      composer: {
-        "silverstripe/framework": "3.0+"
-      }
-    },
     variants: [
       {
-        scope: ".text.html.ss",
+        conditions: {
+          scope: ".text.html.ss",
+          composer: {
+            "silverstripe/framework": "3.0+"
+          }
+        },
         body: "CurrentMember.ID"
       },
       {
-        scope: ".text.html.php",
+        conditions: {
+          scope: ".text.html.php",
+          composer: {
+            "silverstripe/framework": "3.0-4.0"
+          }
+        },
         body: "Member::currentUserID()"
-      }
+      },
+      {
+        conditions: {
+          scope: ".text.html.php",
+          composer: {
+            "silverstripe/framework": "4.0+"
+          }
+        },
+        body: "Member::currentUserID()",
+        useItems: [
+          "SilverStripe\\Security\\Member"
+        ]
+      },
     ]
   },
   "Current SiteConfig": {
