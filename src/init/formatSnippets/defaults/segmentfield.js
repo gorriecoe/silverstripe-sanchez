@@ -2,9 +2,9 @@ module.exports = {
   "SegmentField": {
     conditions: {
       scope: ".text.html.php",
-      composer: [
-        "silverstripe/segment-field"
-      ]
+      composer: {
+        "silverstripe/segment-field": "-2.0"
+      }
     },
     body: "SegmentField::create(\n\t'${1:name}',\n\t'${2:${1:title}}'\n)",
     variants: [
@@ -18,7 +18,8 @@ module.exports = {
         useItems: [
           "SilverStripe\\Forms\\SegmentField"
         ]
-      }
+      },
+      {} // Output top level as variant.
     ]
   }
 }

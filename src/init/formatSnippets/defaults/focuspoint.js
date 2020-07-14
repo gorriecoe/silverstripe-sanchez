@@ -38,8 +38,6 @@ module.exports = {
         "jonom/focuspoint": "2.0+"
       }
     },
-
-    "minVersion": "2.0",
     body: "FocusCropWidth(${1:width})"
   },
   "Focus Crop Height Image": {

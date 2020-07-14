@@ -19,7 +19,7 @@ module.exports = {
           "SilverStripe\\Control\\Session"
         ]
       },
-      {}
+      {} // Output top level as variant.
     ]
   },
   "Get session value": {
@@ -111,7 +111,7 @@ module.exports = {
           "SilverStripe\\Control\\Session"
         ]
       },
-      {}
+      {} // Output top level as variant.
     ]
   }
 }

@@ -58,7 +58,7 @@ module.exports = {
     conditions: {
       scope: ".text.html.php",
       composer: {
-        "silverstripe/framework": "3.0+"
+        "silverstripe/framework": "3.0-4.0"
       }
     },
     body: "Permission::check(${1:string|array}, ${2:'any'}, ${3:$member})",
@@ -72,17 +72,31 @@ module.exports = {
         useItems: [
           "SilverStripe\\Security\\Permission"
         ]
-      }
+      },
+      {} // Output top level as variant.
     ]
   },
   "providePermissions": {
     conditions: {
       scope: ".text.html.php",
       composer: {
-        "silverstripe/framework": "3.0+"
+        "silverstripe/framework": "3.0-4.0"
       }
     },
-    comment: "Return a map of permission codes to add to the dropdown shown in the Security section of the CMS\n@return array",
-    body: "public function providePermissions()\n{\n\treturn [\n\t\t'${1:PERMISSION}' => '${2:Title}'\n\t];\n}"
+    comment: "Return a map of permission codes to add to the dropdown shown\nin the Security section of the CMS.\n@return array",
+    body: "public function providePermissions()\n{\n\treturn [\n\t\t'${1:PERMISSION}' => '${2:Title}'\n\t];\n}",
+    variants: [
+      {
+        conditions: {
+          composer: {
+            "silverstripe/framework": "4.0+"
+          }
+        },
+        useItems: [
+          "SilverStripe\\Security\\PermissionProvider"
+        ]
+      },
+      {} // Output top level as variant.
+    ]
   }
 }

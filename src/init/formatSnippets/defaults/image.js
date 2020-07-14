@@ -172,7 +172,7 @@ module.exports = {
             "silverstripe/framework": "3.2+"
           }
         },
-        body: "Pad(${1:width},${2:${1:height}},${3:hex})"
+        body: "Pad(${1:width},${2:${1:height}},${3:#fff})"
       },
       {
         conditions: {
@@ -180,7 +180,7 @@ module.exports = {
             "silverstripe/framework": "-3.2"
           }
         },
-        body: "PaddedImage(${1:width},${2:${1:height}},${3:hex})"
+        body: "PaddedImage(${1:width},${2:${1:height}},${3:#fff})"
       }
     ]
   }

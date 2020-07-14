@@ -729,7 +729,6 @@ module.exports = {
     ]
   },
   "GridFieldConfig_RecordEditor": {
-    "prefix": "gridfieldconfig_recordeditor",
     conditions: {
       scope: ".text.html.php",
       composer: {
