@@ -14,6 +14,7 @@ module.exports = (paths = []) => {
     })
   })
 
+  // @Todo Finish this later
   return Promise.all(promises)
     .then(() => { return {
       nodePackages: packages,
