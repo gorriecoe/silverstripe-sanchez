@@ -1,5 +1,3 @@
-const { matchEvery } = require("./arrays")
-
 /**
  * Match 2 given strings
  * @param string1

@@ -2,10 +2,10 @@
  * Return a array of locations for use item namespacing to be placed.
  */
 
-const engine = require('php-parser')
+const Engine = require('php-parser')
 const isset = require('isset')
 
-const parser = new engine({
+const parser = new Engine({
   parser: {
     debug: false,
     locations: true,
@@ -36,8 +36,8 @@ const find = (AST, criteria) => {
     let pass = true
     for (const criterion in criteria) {
       if (!(
-        criteria.hasOwnProperty(criterion) &&
-        AST.hasOwnProperty(criterion) &&
+        criterion in criteria &&
+        criterion in AST &&
         AST[criterion] === criteria[criterion]
       )) {
         pass = false
@@ -46,7 +46,7 @@ const find = (AST, criteria) => {
     if (pass) return AST
   }
   for (const key in AST) {
-    if (AST.hasOwnProperty(key) && AST[key] !== AST) {
+    if (key in AST && AST[key] !== AST) {
       result = find(AST[key], criteria)
       if (result) return result
     }
@@ -82,7 +82,7 @@ module.exports = (
       kind: 'usegroup'
     })
     // If found place at the top of the use group.
-    if (isset(node) && node.hasOwnProperty('loc')) {
+    if (isset(node) && 'loc' in node) {
       return {
         body: body,
         line: node.loc.start.line - 1
@@ -94,7 +94,7 @@ module.exports = (
     })
 
     // If found place below the useItem.
-    if (isset(node) && node.hasOwnProperty('loc')) {
+    if (isset(node) && 'loc' in node) {
       return {
         body: '\n' + body + '\n',
         line: node.loc.start.line + 1
@@ -105,7 +105,7 @@ module.exports = (
     node = find(AST, {
       kind: 'program'
     })
-    if (isset(node) && node.hasOwnProperty('loc')) {
+    if (isset(node) && 'loc' in node) {
       return {
         body: '\n' + body + '\n',
         line: node.loc.start.line

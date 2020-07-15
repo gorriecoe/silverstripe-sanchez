@@ -25,14 +25,12 @@ let allSnippetsStore = null
 const formatPackages = (packages = {}) => {
   const output = {}
   if (Array.isArray(packages)) {
-    packages.forEach(package => {
-      output[package] = version.range('0')
+    packages.forEach(packageName => {
+      output[packageName] = version.range('0')
     })
   } else {
-    for (const package in packages) {
-      if (packages.hasOwnProperty(package)) {
-        output[package] = version.range(packages[package])
-      }
+    for (const packageName in packages) {
+      output[packageName] = version.range(packages[packageName])
     }
   }
   return output
@@ -44,8 +42,7 @@ const formatPackages = (packages = {}) => {
  * @param prefix
  * @returns String
  */
-const formatPrefix = (name, prefix, moduleName, moduleVersion) => {
-  prefix = prefix ? prefix : name
+const formatPrefix = (name, prefix = name, moduleName, moduleVersion) => {
   return [
     prefix.trim()
       .replace('&', 'and')
@@ -166,8 +163,8 @@ const formatBody = (snippet) => {
 const formatSnippet = (RAW, snippet) => {
   snippet = snippet ? snippet : RAW
 
-  let firstComposerName = 'framework',
-    firstComposerVersion = '3.0+'
+  let firstComposerName = 'framework'
+  let firstComposerVersion = '3.0+'
 
   const { composer, node } = isset(snippet.conditions) ? snippet.conditions : {}
 
@@ -249,12 +246,12 @@ module.exports = (snippets = {}) => {
   const output = []
 
   for (const name in snippets) {
-    if (snippets.hasOwnProperty(name)) {
+    if (name in snippets) {
       const snippet = snippets[name]
       snippet.name = name
 
       // Check if snippet has multiple scopes and a comment.
-        // In this case we need to create separate variants for each scope.
+      // In this case we need to create separate variants for each scope.
       if (
         isset(snippet.conditions) &&
         isset(snippet.conditions.scope) &&
@@ -264,7 +261,7 @@ module.exports = (snippets = {}) => {
 
         if (conditionsScope.length >= 2) {
           conditionsScope.forEach(scope => {
-            if (snippet.hasOwnProperty('variants')) {
+            if ('variants' in snippet) {
               snippet.variants.push({
                 conditions: {
                   scope: scope
@@ -284,7 +281,7 @@ module.exports = (snippets = {}) => {
       }
 
       if (isset(snippet.variants)) {
-        for (let variant in snippet.variants) {
+        for (const variant in snippet.variants) {
           output.push(formatSnippet(
             // Add RAW snippet.
             snippet,

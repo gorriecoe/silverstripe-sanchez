@@ -25,7 +25,7 @@ const format = (language = defaultLanguages) => {
 
   // If one of the silverstripe aliases are used add them to languages for filtering later.
   if (arrays.matchOne(languages, silverstripeAliases)) {
-    languages= languages.concat(
+    languages = languages.concat(
       silverstripeAliases
     )
   }

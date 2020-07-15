@@ -3,7 +3,7 @@ const read = require('read-installed')
 
 module.exports = (paths = []) => {
   let packages = []
-  let promises = paths.map(filePath => {
+  const promises = paths.map(filePath => {
     return new Promise((resolve, reject) => {
       filePath = path.resolve(filePath)
       read(filePath, {}, (error, data) => {
@@ -16,9 +16,11 @@ module.exports = (paths = []) => {
 
   // @Todo Finish this later
   return Promise.all(promises)
-    .then(() => { return {
-      nodePackages: packages,
-      nodePaths: paths
-    }})
+    .then(() => {
+      return {
+        nodePackages: packages,
+        nodePaths: paths
+      }
+    })
     .catch(console.error)
 }

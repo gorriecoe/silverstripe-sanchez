@@ -19,7 +19,7 @@ module.exports = (paths = []) => {
   // Find all files called .silverstripe_sanchez and parse the data.
   // We accept cson, json or yml formats
   for (const key in paths) {
-    if (paths.hasOwnProperty(key)) {
+    if (key in paths) {
       const filepath = path.resolve(path.join(
         paths[key],
         filename

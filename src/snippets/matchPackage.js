@@ -1,6 +1,6 @@
 const { arrays, version } = require('../utilities')
 
-module.exports =  (
+module.exports = (
   requiredPackages,
   packages
 ) => {
@@ -18,16 +18,14 @@ module.exports =  (
   }
 
   // Finally loop packages and filter check version range.
-  for (const package in requiredPackages) {
-    if (requiredPackages.hasOwnProperty(package)) {
-      let { min, max} = requiredPackages[package]
-      let moduleVersion = version.format(packages[package])
+  for (const requiredPackage in requiredPackages) {
+    let { min, max } = requiredPackages[requiredPackage]
+    const moduleVersion = version.format(packages[requiredPackage])
 
-      min = (min) ? moduleVersion >= min : true
-      max = (max) ? moduleVersion < max : true
-      if (!(min && max)) {
-        return false
-      }
+    min = (min) ? moduleVersion >= min : true
+    max = (max) ? moduleVersion < max : true
+    if (!(min && max)) {
+      return false
     }
   }
 

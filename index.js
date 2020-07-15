@@ -1,15 +1,13 @@
-const snippets =  require('./src/snippets')
+const snippets = require('./src/snippets')
 const init = require('./src/init')
-const injection =  require('./src/injection')
+const injection = require('./src/injection')
 
 module.exports = class {
-  data = {}
-
   constructor (options) {
     this.data = init(options)
   }
 
-  get allSnippets() {
+  get allSnippets () {
     return this.data.snippets
   }
 
@@ -28,7 +26,7 @@ module.exports = class {
     )
   }
 
-  getUseItemLoc ({text, useItems}) {
+  getUseItemLoc ({ text, useItems }) {
     return injection.getUseItemLoc(
       text,
       useItems,

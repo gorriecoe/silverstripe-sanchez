@@ -6,7 +6,7 @@ const { version } = require('../utilities')
 const filename = 'composer.lock'
 
 module.exports = (paths = []) => {
-  let packages = {}
+  const packages = {}
 
   paths.map(filePath => {
     filePath = path.resolve(
@@ -15,11 +15,9 @@ module.exports = (paths = []) => {
 
     if (fs.existsSync(filePath)) {
       const packagesFound = json.read(filePath).data.packages
-      for (const package in packagesFound) {
-        if (packagesFound.hasOwnProperty(package)) {
-          const element = packagesFound[package]
-          packages[element.name] = version.format(element.version)
-        }
+      for (const packageFound in packagesFound) {
+        const element = packagesFound[packageFound]
+        packages[element.name] = version.format(element.version)
       }
     }
   })

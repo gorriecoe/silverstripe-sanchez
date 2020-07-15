@@ -1,7 +1,7 @@
-const matchPackages = require('./package')
-const matchPrefix = require('./prefix')
-const matchScope = require('./scope')
-const matchLanguage = require('./language')
+const matchPackages = require('./matchPackage')
+const matchPrefix = require('./matchPrefix')
+const matchScope = require('./matchScope')
+const matchLanguage = require('./matchLanguage')
 
 module.exports = (
   snippets = [],
@@ -13,9 +13,9 @@ module.exports = (
 ) => {
   return snippets.filter(snippet => {
     const conditions = snippet.conditions
-    return (scope == true || matchScope(conditions.scope, scope)) &
-          (prefix == true || matchPrefix(conditions.prefix, prefix)) &
-          (language == true || matchLanguage(conditions.language, language)) &
+    return (scope === true || matchScope(conditions.scope, scope)) &
+          (prefix === true || matchPrefix(conditions.prefix, prefix)) &
+          (language === true || matchLanguage(conditions.language, language)) &
           matchPackages(conditions.composer, composerPackages) &
           matchPackages(conditions.node, nodePackages)
   })
