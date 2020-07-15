@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/gorriecoe/silverstripe-sanchez.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "Gorrie",
   "author": "Gorrie",
   "license": "BSD-3-Clause",
