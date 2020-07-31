@@ -12,31 +12,21 @@ absolutelink-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 AbsoluteLink${0}
 ```
-
-#### Use items
-
-
 
 ## Add extra class
 
@@ -50,6 +40,7 @@ addextraclass-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -58,19 +49,9 @@ addextraclass-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 addExtraClass('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## addComponent
 
@@ -84,6 +65,7 @@ addcomponent-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -92,19 +74,9 @@ addcomponent-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 addComponent(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## addFieldsToTab
 
@@ -118,6 +90,7 @@ addfieldstotab-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -125,12 +98,6 @@ addfieldstotab-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 addFieldsToTab(
@@ -140,10 +107,6 @@ addFieldsToTab(
 	]
 );
 ```
-
-#### Use items
-
-
 
 ## addFieldToTab
 
@@ -157,6 +120,7 @@ addfieldtotab-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -165,12 +129,6 @@ addfieldtotab-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 addFieldToTab(
 	'${1:Root.Main}',
@@ -178,10 +136,6 @@ addFieldToTab(
 	'${3:insertBefore}'
 );
 ```
-
-#### Use items
-
-
 
 ## AllChildren
 
@@ -195,31 +149,21 @@ allchildren-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 AllChildren${0}
 ```
-
-#### Use items
-
-
 
 ## Allowed actions
 
@@ -233,6 +177,7 @@ allowedactions-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -240,8 +185,6 @@ allowedactions-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -257,10 +200,6 @@ private static \$allowed_actions = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Allowed children
 
 ### Conditions
@@ -273,6 +212,7 @@ allowedchildren-ss-cms-3.0+
 #### Composer
 
 
+ - silverstripe/cms
 
 #### Language
 
@@ -280,8 +220,6 @@ allowedchildren-ss-cms-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -297,10 +235,6 @@ private static \$allowed_children = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Base Tag
 
 ### Conditions
@@ -313,30 +247,20 @@ basetag-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% base_tag %>${0}
 ```
-
-#### Use items
-
-
 
 ## Belongs many many relationships
 
@@ -350,6 +274,7 @@ belongsmanymanyrelationships-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -357,8 +282,6 @@ belongsmanymanyrelationships-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -374,10 +297,6 @@ private static \$belongs_many_many = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Belongs to relationships
 
 ### Conditions
@@ -390,6 +309,7 @@ belongstorelationships-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -397,8 +317,6 @@ belongstorelationships-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -415,10 +333,6 @@ private static \$belongs_to = [
 ${0}
 ```
 
-#### Use items
-
-
-
 ## BetterButtonCustomAction
 
 ### Conditions
@@ -431,6 +345,7 @@ betterbuttoncustomaction-ss-betterbuttons-0.0+
 #### Composer
 
 
+ - unclecheese/betterbuttons
 
 #### Language
 
@@ -439,22 +354,12 @@ betterbuttoncustomaction-ss-betterbuttons-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 BetterButtonCustomAction::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## BetterButtonNestedForm
 
@@ -468,6 +373,7 @@ betterbuttonnestedform-ss-betterbuttons-0.0+
 #### Composer
 
 
+ - unclecheese/betterbuttons
 
 #### Language
 
@@ -475,12 +381,6 @@ betterbuttonnestedform-ss-betterbuttons-0.0+
  - php
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 BetterButtonNestedForm::create(
@@ -491,10 +391,6 @@ BetterButtonNestedForm::create(
 	)
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Breadcrumbs
 
@@ -508,30 +404,20 @@ breadcrumbs-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Breadcrumbs${0}
 ```
-
-#### Use items
-
-
 
 ## Can be root
 
@@ -545,6 +431,7 @@ canberoot-ss-cms-3.0+
 #### Composer
 
 
+ - silverstripe/cms
 
 #### Language
 
@@ -552,8 +439,6 @@ canberoot-ss-cms-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -567,10 +452,6 @@ canberoot-ss-cms-3.0+
 private static $can_be_root = ${1:false};${0}
 ```
 
-#### Use items
-
-
-
 ## Can create permissions
 
 ### Conditions
@@ -583,6 +464,7 @@ cancreatepermissions-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -590,8 +472,6 @@ cancreatepermissions-ss-framework-4.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -611,10 +491,6 @@ public function canCreate(\$member = null, \$context = [])
 }${0}
 ```
 
-#### Use items
-
-
-
 ## Can create permissions
 
 ### Conditions
@@ -627,6 +503,7 @@ cancreatepermissions-ss-framework--4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -634,8 +511,6 @@ cancreatepermissions-ss-framework--4.0
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -653,10 +528,6 @@ public function canCreate(\$member = null)
 }${0}
 ```
 
-#### Use items
-
-
-
 ## Can delete permissions
 
 ### Conditions
@@ -669,6 +540,7 @@ candeletepermissions-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -676,8 +548,6 @@ candeletepermissions-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -695,10 +565,6 @@ public function canDelete(\$member = null)
 }${0}
 ```
 
-#### Use items
-
-
-
 ## Can edit permissions
 
 ### Conditions
@@ -711,6 +577,7 @@ caneditpermissions-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -718,8 +585,6 @@ caneditpermissions-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -737,10 +602,6 @@ public function canEdit(\$member = null)
 }${0}
 ```
 
-#### Use items
-
-
-
 ## Can view permissions
 
 ### Conditions
@@ -753,6 +614,7 @@ canviewpermissions-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -760,8 +622,6 @@ canviewpermissions-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -779,10 +639,6 @@ public function canView(\$member = null)
 }${0}
 ```
 
-#### Use items
-
-
-
 ## Casting
 
 ### Conditions
@@ -795,6 +651,7 @@ casting-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -802,8 +659,6 @@ casting-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -820,10 +675,6 @@ private static \$casting = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## CheckboxField
 
 ### Conditions
@@ -836,6 +687,7 @@ checkboxfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -844,9 +696,8 @@ checkboxfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\CheckboxField
 
 ```
 
@@ -856,11 +707,6 @@ CheckboxField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\CheckboxField
 
 ## CheckboxField
 
@@ -874,6 +720,7 @@ checkboxfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -882,22 +729,12 @@ checkboxfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CheckboxField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## CheckboxField readonly
 
@@ -911,6 +748,7 @@ checkboxfieldreadonly-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -919,9 +757,8 @@ checkboxfieldreadonly-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\CheckboxField_Readonly
 
 ```
 
@@ -931,11 +768,6 @@ CheckboxField_Readonly::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\CheckboxField_Readonly
 
 ## CheckboxField readonly
 
@@ -949,6 +781,7 @@ checkboxfieldreadonly-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -957,22 +790,12 @@ checkboxfieldreadonly-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CheckboxField_Readonly::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## CheckboxSetField
 
@@ -986,6 +809,7 @@ checkboxsetfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -994,9 +818,8 @@ checkboxsetfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\CheckboxSetField
 
 ```
 
@@ -1007,11 +830,6 @@ CheckboxSetField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\CheckboxSetField
 
 ## CheckboxSetField
 
@@ -1025,6 +843,7 @@ checkboxsetfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1033,12 +852,6 @@ checkboxsetfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CheckboxSetField::create(
 	'${1:name}',
@@ -1046,10 +859,6 @@ CheckboxSetField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Children
 
@@ -1063,31 +872,21 @@ children-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Children${0}
 ```
-
-#### Use items
-
-
 
 ## ChildrenOf
 
@@ -1101,30 +900,20 @@ childrenof-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 ChildrenOf(${1:page-url})${0}
 ```
-
-#### Use items
-
-
 
 ## Class BuildTask
 
@@ -1138,6 +927,7 @@ classbuildtask-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1146,7 +936,10 @@ classbuildtask-ss-framework-4.0+
 
 ### Content
 
-#### Body
+```
+use SilverStripe\Dev\BuildTask
+
+```
 
 ```
 /**
@@ -1190,11 +983,6 @@ class ${1} extends BuildTask
 	}
 }
 ```
-
-#### Use items
-
-
- - SilverStripe\Dev\BuildTask
 
 ## Class BuildTask
 
@@ -1208,6 +996,7 @@ classbuildtask-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1215,8 +1004,6 @@ classbuildtask-ss-framework-3.0-4.0
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -1261,10 +1048,6 @@ class ${1} extends BuildTask
 }
 ```
 
-#### Use items
-
-
-
 ## Class DataObject
 
 ### Conditions
@@ -1277,6 +1060,7 @@ classdataobject-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1285,7 +1069,10 @@ classdataobject-ss-framework-4.0+
 
 ### Content
 
-#### Body
+```
+use SilverStripe\ORM\DataObject
+
+```
 
 ```
 /**
@@ -1303,11 +1090,6 @@ class ${1} extends ${2:DataObject}
 	${0}
 }
 ```
-
-#### Use items
-
-
- - SilverStripe\ORM\DataObject
 
 ## Class DataObject
 
@@ -1321,6 +1103,7 @@ classdataobject-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1328,8 +1111,6 @@ classdataobject-ss-framework-3.0-4.0
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -1348,10 +1129,6 @@ class ${1} extends ${2:DataObject}
 }
 ```
 
-#### Use items
-
-
-
 ## Class Model Admin
 
 ### Conditions
@@ -1364,6 +1141,7 @@ classmodeladmin-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1372,7 +1150,10 @@ classmodeladmin-ss-framework-4.0+
 
 ### Content
 
-#### Body
+```
+use SilverStripe\Admin\ModelAdmin
+
+```
 
 ```
 /**
@@ -1410,11 +1191,6 @@ class ${1}Admin extends ModelAdmin
 	${0}
 }
 ```
-
-#### Use items
-
-
- - SilverStripe\Admin\ModelAdmin
 
 ## Class Model Admin
 
@@ -1428,6 +1204,7 @@ classmodeladmin-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1435,8 +1212,6 @@ classmodeladmin-ss-framework-3.0-4.0
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -1475,10 +1250,6 @@ class ${1}Admin extends ModelAdmin
 }
 ```
 
-#### Use items
-
-
-
 ## Class Page
 
 ### Conditions
@@ -1491,6 +1262,7 @@ classpage-ss-cms-4.0+
 #### Composer
 
 
+ - silverstripe/cms
 
 #### Language
 
@@ -1499,7 +1271,10 @@ classpage-ss-cms-4.0+
 
 ### Content
 
-#### Body
+```
+use SilverStripe\CMS\Model\SiteTree
+
+```
 
 ```
 /**
@@ -1517,11 +1292,6 @@ class $1 extends ${2:Page}
 	${0}
 }
 ```
-
-#### Use items
-
-
- - SilverStripe\CMS\Model\SiteTree
 
 ## Class Page
 
@@ -1535,6 +1305,7 @@ classpage-ss-cms-3.0-4.0
 #### Composer
 
 
+ - silverstripe/cms
 
 #### Language
 
@@ -1542,8 +1313,6 @@ classpage-ss-cms-3.0-4.0
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -1562,10 +1331,6 @@ class $1 extends ${2:Page}
 }
 ```
 
-#### Use items
-
-
-
 ## Class Page Controller
 
 ### Conditions
@@ -1578,6 +1343,7 @@ classpagecontroller-ss-cms-4.0+
 #### Composer
 
 
+ - silverstripe/cms
 
 #### Language
 
@@ -1586,7 +1352,10 @@ classpagecontroller-ss-cms-4.0+
 
 ### Content
 
-#### Body
+```
+use SilverStripe\CMS\Controllers\ContentController
+
+```
 
 ```
 /**
@@ -1607,11 +1376,6 @@ class ${1}Controller extends ${2:Page}Controller
 	}
 }${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\CMS\Controllers\ContentController
 
 ## Class Page Controller
 
@@ -1625,6 +1389,7 @@ classpagecontroller-ss-cms-3.0-4.0
 #### Composer
 
 
+ - silverstripe/cms
 
 #### Language
 
@@ -1632,8 +1397,6 @@ classpagecontroller-ss-cms-3.0-4.0
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -1655,10 +1418,6 @@ class ${1}Controller extends ${2:Page}Controller
 }${0}
 ```
 
-#### Use items
-
-
-
 ## ClassName
 
 ### Conditions
@@ -1671,31 +1430,21 @@ classname-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 ClassName${0}
 ```
-
-#### Use items
-
-
 
 ## Clear all sessions
 
@@ -1709,6 +1458,7 @@ sessionclearall-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1717,20 +1467,14 @@ sessionclearall-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Control\Session
 
 ```
 
 ```
 Session::clear_all('${1}')${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Control\Session
 
 ## Clear all sessions
 
@@ -1744,6 +1488,7 @@ sessionclearall-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1752,19 +1497,9 @@ sessionclearall-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Session::clear_all('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## Clear session value
 
@@ -1778,6 +1513,7 @@ sessionclear-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1786,20 +1522,14 @@ sessionclear-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Control\Session
 
 ```
 
 ```
 Session::clear('${1}')${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Control\Session
 
 ## Clear session value
 
@@ -1813,6 +1543,7 @@ sessionclear-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1821,19 +1552,9 @@ sessionclear-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Session::clear('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## contains Comparison
 
@@ -1847,6 +1568,7 @@ containscomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -1855,19 +1577,9 @@ containscomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 contains(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Content
 
@@ -1881,31 +1593,21 @@ content-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Content${0}
 ```
-
-#### Use items
-
-
 
 ## Convert array to JSON
 
@@ -1919,6 +1621,7 @@ convertarraytojson-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1927,20 +1630,14 @@ convertarraytojson-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::array2json(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert array to JSON
 
@@ -1954,6 +1651,7 @@ convertarraytojson-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1962,19 +1660,9 @@ convertarraytojson-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::array2json(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert HTML to plain text
 
@@ -1988,6 +1676,7 @@ converthtmltoplaintext-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -1996,20 +1685,14 @@ converthtmltoplaintext-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::html2raw(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert HTML to plain text
 
@@ -2023,6 +1706,7 @@ converthtmltoplaintext-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2031,19 +1715,9 @@ converthtmltoplaintext-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::html2raw(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert JSON to an array
 
@@ -2057,6 +1731,7 @@ convertjsontoanarray-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2065,20 +1740,14 @@ convertjsontoanarray-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::json2array(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert JSON to an array
 
@@ -2092,6 +1761,7 @@ convertjsontoanarray-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2100,19 +1770,9 @@ convertjsontoanarray-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::json2array(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert JSON to an object
 
@@ -2126,6 +1786,7 @@ convertjsontoanobject-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2134,20 +1795,14 @@ convertjsontoanobject-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::json2obj(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert JSON to an object
 
@@ -2161,6 +1816,7 @@ convertjsontoanobject-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2169,19 +1825,9 @@ convertjsontoanobject-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::json2obj(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert symbolic identifier to SQL
 
@@ -2195,6 +1841,7 @@ convertsymbolicidentifiertosql-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2203,20 +1850,14 @@ convertsymbolicidentifiertosql-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::symbol2sql(${1}, ${2:'.'})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert symbolic identifier to SQL
 
@@ -2230,6 +1871,7 @@ convertsymbolicidentifiertosql-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2238,19 +1880,9 @@ convertsymbolicidentifiertosql-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::symbol2sql(${1}, ${2:'.'})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert to link if valid
 
@@ -2264,6 +1896,7 @@ converttolinkifvalid-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2272,20 +1905,14 @@ converttolinkifvalid-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::linkIfMatch(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert to link if valid
 
@@ -2299,6 +1926,7 @@ converttolinkifvalid-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2307,19 +1935,9 @@ converttolinkifvalid-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::linkIfMatch(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert value to HTML attribute
 
@@ -2333,6 +1951,7 @@ convertvaluetohtmlattribute-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2341,20 +1960,14 @@ convertvaluetohtmlattribute-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::raw2htmlatt(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert value to HTML attribute
 
@@ -2368,6 +1981,7 @@ convertvaluetohtmlattribute-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2376,19 +1990,9 @@ convertvaluetohtmlattribute-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::raw2htmlatt(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert value to HTML ID
 
@@ -2402,6 +2006,7 @@ convertvaluetohtmlid-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2410,20 +2015,14 @@ convertvaluetohtmlid-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::raw2htmlid(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert value to HTML ID
 
@@ -2437,6 +2036,7 @@ convertvaluetohtmlid-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2445,19 +2045,9 @@ convertvaluetohtmlid-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::raw2htmlid(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert value to HTML name
 
@@ -2471,6 +2061,7 @@ convertvaluetohtmlname-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2479,20 +2070,14 @@ convertvaluetohtmlname-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::raw2htmlname(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert value to HTML name
 
@@ -2506,6 +2091,7 @@ convertvaluetohtmlname-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2514,19 +2100,9 @@ convertvaluetohtmlname-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::raw2htmlname(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert value to javascript
 
@@ -2540,6 +2116,7 @@ convertvaluetojavascript-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2548,20 +2125,14 @@ convertvaluetojavascript-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::raw2js(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert value to javascript
 
@@ -2575,6 +2146,7 @@ convertvaluetojavascript-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2583,19 +2155,9 @@ convertvaluetojavascript-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::raw2js(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert value to JSON
 
@@ -2609,6 +2171,7 @@ convertvaluetojson-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2617,20 +2180,14 @@ convertvaluetojson-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::raw2json(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert value to JSON
 
@@ -2644,6 +2201,7 @@ convertvaluetojson-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2652,19 +2210,9 @@ convertvaluetojson-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::raw2json(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert value to SQL
 
@@ -2678,6 +2226,7 @@ convertvaluetosql-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2686,20 +2235,14 @@ convertvaluetosql-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::raw2sql(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert value to SQL
 
@@ -2713,6 +2256,7 @@ convertvaluetosql-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2721,19 +2265,9 @@ convertvaluetosql-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::raw2sql(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert value to url
 
@@ -2747,6 +2281,7 @@ convertvaluetourl-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2755,20 +2290,14 @@ convertvaluetourl-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::raw2url(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert value to url
 
@@ -2782,6 +2311,7 @@ convertvaluetourl-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2790,19 +2320,9 @@ convertvaluetourl-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::raw2url(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert value to XML
 
@@ -2816,6 +2336,7 @@ convertvaluetoxml-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2824,20 +2345,14 @@ convertvaluetoxml-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::raw2xml(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert value to XML
 
@@ -2851,6 +2366,7 @@ convertvaluetoxml-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2859,19 +2375,9 @@ convertvaluetoxml-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::raw2xml(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert value to XML attribute
 
@@ -2885,6 +2391,7 @@ convertvaluetoxmlattribute-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2893,20 +2400,14 @@ convertvaluetoxmlattribute-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::raw2att(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert value to XML attribute
 
@@ -2920,6 +2421,7 @@ convertvaluetoxmlattribute-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2928,19 +2430,9 @@ convertvaluetoxmlattribute-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::raw2att(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert XML to an array
 
@@ -2954,6 +2446,7 @@ convertxmltoanarray-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2962,20 +2455,14 @@ convertxmltoanarray-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::xml2array(${1}, {$2:false}, {$3:false})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert XML to an array
 
@@ -2989,6 +2476,7 @@ convertxmltoanarray-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -2997,19 +2485,9 @@ convertxmltoanarray-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::xml2array(${1}, {$2:false}, {$3:false})${0}
 ```
-
-#### Use items
-
-
 
 ## Convert XML to raw text
 
@@ -3023,6 +2501,7 @@ convertxmltorawtext-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3031,20 +2510,14 @@ convertxmltorawtext-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Core\Convert
 
 ```
 
 ```
 Convert::xml2raw(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Core\Convert
 
 ## Convert XML to raw text
 
@@ -3058,6 +2531,7 @@ convertxmltorawtext-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3066,19 +2540,9 @@ convertxmltorawtext-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Convert::xml2raw(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Count
 
@@ -3092,30 +2556,20 @@ count-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Count${0}
 ```
-
-#### Use items
-
-
 
 ## Count
 
@@ -3129,6 +2583,7 @@ count-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3137,19 +2592,9 @@ count-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Count()${0}
 ```
-
-#### Use items
-
-
 
 ## Crop height image
 
@@ -3163,31 +2608,21 @@ cropheightimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CropHeight(${1:width})${0}
 ```
-
-#### Use items
-
-
 
 ## Crop width image
 
@@ -3201,31 +2636,21 @@ cropwidthimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CropWidth(${1:width})${0}
 ```
-
-#### Use items
-
-
 
 ## CurrencyField
 
@@ -3239,6 +2664,7 @@ currencyfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3247,9 +2673,8 @@ currencyfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\CurrencyField
 
 ```
 
@@ -3259,11 +2684,6 @@ CurrencyField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\CurrencyField
 
 ## CurrencyField
 
@@ -3277,6 +2697,7 @@ currencyfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3285,22 +2706,12 @@ currencyfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CurrencyField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Current Member
 
@@ -3314,30 +2725,20 @@ member-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CurrentMember${0}
 ```
-
-#### Use items
-
-
 
 ## Current Member
 
@@ -3351,6 +2752,7 @@ member-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3359,19 +2761,9 @@ member-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Member::currentUser()${0}
 ```
-
-#### Use items
-
-
 
 ## Current Member
 
@@ -3385,6 +2777,7 @@ member-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3393,20 +2786,14 @@ member-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Security\Member
 
 ```
 
 ```
 Member::currentUser()${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Security\Member
 
 ## Current Member ID
 
@@ -3420,30 +2807,20 @@ memberid-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CurrentMember.ID${0}
 ```
-
-#### Use items
-
-
 
 ## Current Member ID
 
@@ -3457,6 +2834,7 @@ memberid-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3465,19 +2843,9 @@ memberid-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Member::currentUserID()${0}
 ```
-
-#### Use items
-
-
 
 ## Current Member ID
 
@@ -3491,6 +2859,7 @@ memberid-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3499,20 +2868,14 @@ memberid-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Security\Member
 
 ```
 
 ```
 Member::currentUserID()${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Security\Member
 
 ## Current Object Scope
 
@@ -3526,30 +2889,20 @@ currentobjectscope-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Me${0}
 ```
-
-#### Use items
-
-
 
 ## Current SiteConfig
 
@@ -3563,30 +2916,20 @@ siteconfig-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 SiteConfig${0}
 ```
-
-#### Use items
-
-
 
 ## Current SiteConfig
 
@@ -3600,6 +2943,7 @@ siteconfig-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3608,20 +2952,14 @@ siteconfig-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\SiteConfig\SiteConfig
 
 ```
 
 ```
 SiteConfig::current_site_config()${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\SiteConfig\SiteConfig
 
 ## Current SiteConfig
 
@@ -3635,6 +2973,7 @@ siteconfig-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3643,19 +2982,9 @@ siteconfig-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 SiteConfig::current_site_config()${0}
 ```
-
-#### Use items
-
-
 
 ## DB fields
 
@@ -3669,6 +2998,7 @@ dbfields-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3676,8 +3006,6 @@ dbfields-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -3693,10 +3021,6 @@ private static \$db = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## DB indexes
 
 ### Conditions
@@ -3709,6 +3033,7 @@ dbindexes-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3716,8 +3041,6 @@ dbindexes-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -3733,10 +3056,6 @@ private static \$indexes = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Debug dump
 
 ### Conditions
@@ -3749,6 +3068,7 @@ debugdump-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3757,20 +3077,14 @@ debugdump-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Dev\Debug
 
 ```
 
 ```
 Debug::dump(${1});${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Dev\Debug
 
 ## Debug dump
 
@@ -3784,6 +3098,7 @@ debugdump-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3792,19 +3107,9 @@ debugdump-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Debug::dump(${1});${0}
 ```
-
-#### Use items
-
-
 
 ## Debug log
 
@@ -3818,6 +3123,7 @@ debuglog-ss-framework--4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3826,19 +3132,9 @@ debuglog-ss-framework--4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Debug::log(${1});${0}
 ```
-
-#### Use items
-
-
 
 ## Debug message
 
@@ -3852,6 +3148,7 @@ debugmessage-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3860,20 +3157,14 @@ debugmessage-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Dev\Debug
 
 ```
 
 ```
 Debug::message(${1});${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Dev\Debug
 
 ## Debug message
 
@@ -3887,6 +3178,7 @@ debugmessage-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3895,19 +3187,9 @@ debugmessage-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Debug::message(${1});${0}
 ```
-
-#### Use items
-
-
 
 ## Debug show
 
@@ -3921,6 +3203,7 @@ debugshow-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3929,20 +3212,14 @@ debugshow-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Dev\Debug
 
 ```
 
 ```
 Debug::show(${1});${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Dev\Debug
 
 ## Debug show
 
@@ -3956,6 +3233,7 @@ debugshow-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3964,19 +3242,9 @@ debugshow-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Debug::show(${1});${0}
 ```
-
-#### Use items
-
-
 
 ## Default DB values
 
@@ -3990,6 +3258,7 @@ defaultdbvalues-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -3997,8 +3266,6 @@ defaultdbvalues-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -4014,10 +3281,6 @@ private static \$defaults = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Default sort
 
 ### Conditions
@@ -4030,6 +3293,7 @@ defaultsort-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -4037,8 +3301,6 @@ defaultsort-ss-framework-4.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -4052,10 +3314,6 @@ defaultsort-ss-framework-4.0+
 private static \$default_sort = ['${1}' => '${2:ASC}'];${0}
 ```
 
-#### Use items
-
-
-
 ## Default sort
 
 ### Conditions
@@ -4068,6 +3326,7 @@ defaultsort-ss-framework--4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -4075,8 +3334,6 @@ defaultsort-ss-framework--4.0
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -4090,10 +3347,6 @@ defaultsort-ss-framework--4.0
 private static \$default_sort = '${1} ${2:ASC}';${0}
 ```
 
-#### Use items
-
-
-
 ## displayIf Condition
 
 ### Conditions
@@ -4106,6 +3359,7 @@ displayifcondition-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -4114,19 +3368,9 @@ displayifcondition-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 displayIf(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## displayUnless Condition
 
@@ -4140,6 +3384,7 @@ displayunlesscondition-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -4148,19 +3393,9 @@ displayunlesscondition-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 displayUnless(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## DropdownField
 
@@ -4174,6 +3409,7 @@ dropdownfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -4182,9 +3418,8 @@ dropdownfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\DropdownField
 
 ```
 
@@ -4195,11 +3430,6 @@ DropdownField::create(
 	${3:datalist}
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\DropdownField
 
 ## DropdownField
 
@@ -4213,6 +3443,7 @@ dropdownfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -4221,12 +3452,6 @@ dropdownfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 DropdownField::create(
 	'${1:name}',
@@ -4234,10 +3459,6 @@ DropdownField::create(
 	${3:datalist}
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Else
 
@@ -4251,31 +3472,21 @@ else-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% else %>
 	${0}
 ```
-
-#### Use items
-
-
 
 ## EmailField
 
@@ -4289,6 +3500,7 @@ emailfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -4297,9 +3509,8 @@ emailfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\EmailField
 
 ```
 
@@ -4309,11 +3520,6 @@ EmailField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\EmailField
 
 ## EmailField
 
@@ -4327,6 +3533,7 @@ emailfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -4335,22 +3542,12 @@ emailfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 EmailField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Embeddable
 
@@ -4364,6 +3561,7 @@ embeddable-ss-silverstripe-embed-0.0+
 #### Composer
 
 
+ - gorriecoe/silverstripe-embed
 
 #### Language
 
@@ -4372,20 +3570,14 @@ embeddable-ss-silverstripe-embed-0.0+
 
 ### Content
 
-#### Body
-
 ```
+use gorriecoe\Embed\Extensions\Embeddable
 
 ```
 
 ```
 Embeddable::class${0}
 ```
-
-#### Use items
-
-
- - gorriecoe\Embed\Extensions\Embeddable
 
 ## EmbeddedObject - Linkable
 
@@ -4399,6 +3591,7 @@ embeddedobjectlinkable-ss-silverstripe-linkable-2.0+
 #### Composer
 
 
+ - sheadawson/silverstripe-linkable
 
 #### Language
 
@@ -4407,20 +3600,14 @@ embeddedobjectlinkable-ss-silverstripe-linkable-2.0+
 
 ### Content
 
-#### Body
-
 ```
+use Sheadawson\Linkable\Models\EmbeddedObject
 
 ```
 
 ```
 EmbeddedObject::class${0}
 ```
-
-#### Use items
-
-
- - Sheadawson\Linkable\Models\EmbeddedObject
 
 ## EmbeddedObjectField - Linkable
 
@@ -4434,6 +3621,7 @@ embeddedobjectfieldlinkable-ss-silverstripe-linkable-2.0+
 #### Composer
 
 
+ - sheadawson/silverstripe-linkable
 
 #### Language
 
@@ -4442,9 +3630,10 @@ embeddedobjectfieldlinkable-ss-silverstripe-linkable-2.0+
 
 ### Content
 
-#### Body
-
 ```
+use Sheadawson\Linkable\Models\EmbeddedObject
+
+use Sheadawson\Linkable\Forms\EmbeddedObjectField
 
 ```
 
@@ -4455,12 +3644,6 @@ EmbeddedObjectField::create(
 	${3}
 )${0}
 ```
-
-#### Use items
-
-
- - Sheadawson\Linkable\Models\EmbeddedObject
- - Sheadawson\Linkable\Forms\EmbeddedObjectField
 
 ## endsWith Comparison
 
@@ -4474,6 +3657,7 @@ endswithcomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -4482,19 +3666,9 @@ endswithcomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 endsWith(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Escape XML
 
@@ -4508,30 +3682,20 @@ escapexml-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 EscapeXML${0}
 ```
-
-#### Use items
-
-
 
 ## Escape XML
 
@@ -4545,6 +3709,7 @@ escapexml-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -4553,19 +3718,9 @@ escapexml-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 EscapeXML()${0}
 ```
-
-#### Use items
-
-
 
 ## Extensions
 
@@ -4579,6 +3734,7 @@ extensions-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -4586,8 +3742,6 @@ extensions-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -4604,10 +3758,6 @@ private static \$extensions = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Fill image
 
 ### Conditions
@@ -4620,31 +3770,21 @@ fillimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Fill(${1:width},${2:${1:height}})${0}
 ```
-
-#### Use items
-
-
 
 ## Fill image
 
@@ -4658,31 +3798,21 @@ fillimage-ss-framework--3.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CroppedImage(${1:width},${2:${1:height}})${0}
 ```
-
-#### Use items
-
-
 
 ## Fill max image
 
@@ -4696,32 +3826,22 @@ fillmaximage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 FillMax(${1:width},${2:${1:height}})${0}
 ```
 
-#### Use items
-
-
-
 ## First Paragraph
 
 ### Conditions
@@ -4734,30 +3854,20 @@ firstparagraph-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 FirstParagraph${0}
 ```
-
-#### Use items
-
-
 
 ## First Paragraph
 
@@ -4771,6 +3881,7 @@ firstparagraph-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -4779,19 +3890,9 @@ firstparagraph-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 FirstParagraph()${0}
 ```
-
-#### Use items
-
-
 
 ## Fit image
 
@@ -4805,31 +3906,21 @@ fitimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Fit(${1:width},${2:${1:height}})${0}
 ```
-
-#### Use items
-
-
 
 ## Fit Max Image
 
@@ -4843,31 +3934,21 @@ fitmaximage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 FitMax(${1:width},${2:${1:height}})${0}
 ```
-
-#### Use items
-
-
 
 ## Focus Crop Height Image
 
@@ -4881,31 +3962,21 @@ focuscropheightimage-ss-focuspoint-2.0+
 #### Composer
 
 
+ - jonom/focuspoint
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 FocusCropHeight(${1:width})${0}
 ```
-
-#### Use items
-
-
 
 ## Focus Crop Width Image
 
@@ -4919,32 +3990,22 @@ focuscropwidthimage-ss-focuspoint-2.0+
 #### Composer
 
 
+ - jonom/focuspoint
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 FocusCropWidth(${1:width})${0}
 ```
 
-#### Use items
-
-
-
 ## Focus Fill Image
 
 ### Conditions
@@ -4957,32 +4018,22 @@ focusfillimage-ss-focuspoint-0.0+
 #### Composer
 
 
+ - jonom/focuspoint
 
 #### Language
 
 
  - php
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 FocusFill(${1:width},${2:${1:height}})${0}
 ```
 
-#### Use items
-
-
-
 ## Focus Fill Image
 
 ### Conditions
@@ -4995,31 +4046,21 @@ focusfillimage-ss-focuspoint-0.0+
 #### Composer
 
 
+ - jonom/focuspoint
 
 #### Language
 
 
  - php
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 CroppedFocusedImage(${1:width},${2:${1:height}})${0}
 ```
-
-#### Use items
-
-
 
 ## Focus Fill Max Image
 
@@ -5033,32 +4074,22 @@ focusfillmaximage-ss-focuspoint-2.0+
 #### Composer
 
 
+ - jonom/focuspoint
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 FocusFillMax(${1:width},${2:${1:height}})${0}
 ```
 
-#### Use items
-
-
-
 ## Form
 
 ### Conditions
@@ -5071,31 +4102,21 @@ form-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 Form${0}
 ```
 
-#### Use items
-
-
-
 ## Form
 
 ### Conditions
@@ -5108,32 +4129,22 @@ form-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 Form::create(
 	${0}
 )
 ```
-
-#### Use items
-
-
 
 ## Get all sessions
 
@@ -5147,6 +4158,7 @@ sessiongetall-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5155,20 +4167,14 @@ sessiongetall-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Control\Session
 
 ```
 
 ```
 Session::get_all('${1}')${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Control\Session
 
 ## Get all sessions
 
@@ -5182,6 +4188,7 @@ sessiongetall-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5190,19 +4197,9 @@ sessiongetall-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Session::get_all('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## Get base folder
 
@@ -5216,6 +4213,7 @@ basefolder-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5224,20 +4222,14 @@ basefolder-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Control\Director
 
 ```
 
 ```
 Director::baseFolder()${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Control\Director
 
 ## Get base folder
 
@@ -5251,6 +4243,7 @@ basefolder-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5259,19 +4252,9 @@ basefolder-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Director::baseFolder()${0}
 ```
-
-#### Use items
-
-
 
 ## Get session value
 
@@ -5285,6 +4268,7 @@ sessionget-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5293,20 +4277,14 @@ sessionget-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Control\Session
 
 ```
 
 ```
 Session::get('${1}')${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Control\Session
 
 ## Get session value
 
@@ -5320,6 +4298,7 @@ sessionget-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5328,19 +4307,9 @@ sessionget-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Session::get('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## Get the absolute root URL
 
@@ -5359,25 +4328,14 @@ absolutebaseurl-ss-framework-3.0+
 
 
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 AbsoluteBaseURL${0}
 ```
-
-#### Use items
-
-
 
 ## Get the absolute root URL
 
@@ -5391,6 +4349,7 @@ absolutebaseurl-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5399,20 +4358,14 @@ absolutebaseurl-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Control\Director
 
 ```
 
 ```
 Director::absoluteBaseURL()${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Control\Director
 
 ## Get the absolute root URL
 
@@ -5426,6 +4379,7 @@ absolutebaseurl-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5434,19 +4388,9 @@ absolutebaseurl-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Director::absoluteBaseURL()${0}
 ```
-
-#### Use items
-
-
 
 ## Get the root URL
 
@@ -5465,25 +4409,14 @@ baseurl-ss-framework-3.0+
 
 
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 BaseURL${0}
 ```
-
-#### Use items
-
-
 
 ## Get the root URL
 
@@ -5497,6 +4430,7 @@ baseurl-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5505,20 +4439,14 @@ baseurl-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Control\Director
 
 ```
 
 ```
 Director::baseURL()${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Control\Director
 
 ## Get the root URL
 
@@ -5532,6 +4460,7 @@ baseurl-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5540,19 +4469,9 @@ baseurl-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Director::baseURL()${0}
 ```
-
-#### Use items
-
-
 
 ## getBetterButtonsActions
 
@@ -5566,6 +4485,7 @@ getbetterbuttonsactions-ss-betterbuttons-0.0+
 #### Composer
 
 
+ - unclecheese/betterbuttons
 
 #### Language
 
@@ -5573,8 +4493,6 @@ getbetterbuttonsactions-ss-betterbuttons-0.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -5593,10 +4511,6 @@ public function getBetterButtonsActions()
 }
 ```
 
-#### Use items
-
-
-
 ## getCMSFields
 
 ### Conditions
@@ -5609,6 +4523,7 @@ getcmsfields-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5616,8 +4531,6 @@ getcmsfields-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -5636,10 +4549,6 @@ public function getCMSFields()
 }
 ```
 
-#### Use items
-
-
-
 ## getCMSFields scafoldless
 
 ### Conditions
@@ -5652,6 +4561,7 @@ getcmsfieldsscafoldless-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5660,7 +4570,14 @@ getcmsfieldsscafoldless-ss-framework-4.0+
 
 ### Content
 
-#### Body
+```
+use SilverStripe\Forms\FieldList
+
+use SilverStripe\Forms\Tab
+
+use SilverStripe\Forms\TabSet
+
+```
 
 ```
 /**
@@ -5686,13 +4603,6 @@ public function getCMSFields()
 }
 ```
 
-#### Use items
-
-
- - SilverStripe\Forms\FieldList
- - SilverStripe\Forms\Tab
- - SilverStripe\Forms\TabSet
-
 ## getEditForm
 
 ### Conditions
@@ -5705,6 +4615,7 @@ geteditform-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5712,8 +4623,6 @@ geteditform-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -5733,10 +4642,6 @@ public function getEditForm(\$id = null, \$fields = null)
 }
 ```
 
-#### Use items
-
-
-
 ## getLumberjackTitle
 
 ### Conditions
@@ -5749,6 +4654,7 @@ getlumberjacktitle-ss-lumberjack-0.0+
 #### Composer
 
 
+ - silverstripe/lumberjack
 
 #### Language
 
@@ -5756,8 +4662,6 @@ getlumberjacktitle-ss-lumberjack-0.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -5774,10 +4678,6 @@ getlumberjacktitle-ss-lumberjack-0.0+
 }${0}
 ```
 
-#### Use items
-
-
-
 ## getSettingsFields
 
 ### Conditions
@@ -5790,6 +4690,7 @@ getsettingsfields-ss-cms-3.0+
 #### Composer
 
 
+ - silverstripe/cms
 
 #### Language
 
@@ -5797,8 +4698,6 @@ getsettingsfields-ss-cms-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -5818,10 +4717,6 @@ public function getSettingsFields()
 }
 ```
 
-#### Use items
-
-
-
 ## GridField
 
 ### Conditions
@@ -5834,6 +4729,7 @@ gridfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5842,9 +4738,8 @@ gridfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\GridField\GridField
 
 ```
 
@@ -5856,11 +4751,6 @@ GridField::create(
 	${4}
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\GridField\GridField
 
 ## GridField
 
@@ -5874,6 +4764,7 @@ gridfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -5881,12 +4772,6 @@ gridfield-ss-framework-3.0-4.0
  - php
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 GridField::create(
@@ -5896,10 +4781,6 @@ GridField::create(
 	${4}
 )${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldAddExistingSearchButton
 
@@ -5913,6 +4794,7 @@ gridfieldaddexistingsearchbutton-ss-gridfieldextensions-0.0+
 #### Composer
 
 
+ - symbiote/gridfieldextensions
 
 #### Language
 
@@ -5921,19 +4803,9 @@ gridfieldaddexistingsearchbutton-ss-gridfieldextensions-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 new GridFieldAddExistingSearchButton()${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldAddNewInlineButton
 
@@ -5947,6 +4819,7 @@ gridfieldaddnewinlinebutton-ss-gridfieldextensions-0.0+
 #### Composer
 
 
+ - symbiote/gridfieldextensions
 
 #### Language
 
@@ -5955,19 +4828,9 @@ gridfieldaddnewinlinebutton-ss-gridfieldextensions-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 new GridFieldAddNewInlineButton()${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldAddNewMultiClass
 
@@ -5981,6 +4844,7 @@ gridfieldaddnewmulticlass-ss-gridfieldextensions-0.0+
 #### Composer
 
 
+ - symbiote/gridfieldextensions
 
 #### Language
 
@@ -5989,19 +4853,9 @@ gridfieldaddnewmulticlass-ss-gridfieldextensions-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 new GridFieldAddNewMultiClass())${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldButtonRow
 
@@ -6015,6 +4869,7 @@ gridfieldbuttonrow-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6023,20 +4878,14 @@ gridfieldbuttonrow-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\GridField\GridFieldButtonRow
 
 ```
 
 ```
 new GridFieldButtonRow('before')${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\GridField\GridFieldButtonRow
 
 ## GridFieldButtonRow
 
@@ -6050,6 +4899,7 @@ gridfieldbuttonrow-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6058,19 +4908,9 @@ gridfieldbuttonrow-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 new GridFieldButtonRow('before')${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldConfig_Base
 
@@ -6084,6 +4924,7 @@ gridfieldconfig_base-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6092,20 +4933,14 @@ gridfieldconfig_base-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\GridField\GridFieldConfig_Base
 
 ```
 
 ```
 GridFieldConfig_Base::create(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\GridField\GridFieldConfig_Base
 
 ## GridFieldConfig_Base
 
@@ -6119,6 +4954,7 @@ gridfieldconfig_base-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6127,19 +4963,9 @@ gridfieldconfig_base-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 GridFieldConfig_Base::create(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldConfig_RecordEditor
 
@@ -6153,6 +4979,7 @@ gridfieldconfig_recordeditor-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6161,20 +4988,14 @@ gridfieldconfig_recordeditor-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor
 
 ```
 
 ```
 GridFieldConfig_RecordEditor::create(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor
 
 ## GridFieldConfig_RecordEditor
 
@@ -6188,6 +5009,7 @@ gridfieldconfig_recordeditor-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6196,19 +5018,9 @@ gridfieldconfig_recordeditor-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 GridFieldConfig_RecordEditor::create(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldConfig_RecordViewer
 
@@ -6222,6 +5034,7 @@ gridfieldconfig_recordviewer-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6230,20 +5043,14 @@ gridfieldconfig_recordviewer-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\GridField\GridFieldConfig_RecordViewer
 
 ```
 
 ```
 GridFieldConfig_RecordViewer::create(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\GridField\GridFieldConfig_RecordViewer
 
 ## GridFieldConfig_RecordViewer
 
@@ -6257,6 +5064,7 @@ gridfieldconfig_recordviewer-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6265,19 +5073,9 @@ gridfieldconfig_recordviewer-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 GridFieldConfig_RecordViewer::create(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldConfig_RelationEditor
 
@@ -6291,6 +5089,7 @@ gridfieldconfig_relationeditor-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6299,20 +5098,14 @@ gridfieldconfig_relationeditor-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor
 
 ```
 
 ```
 GridFieldConfig_RelationEditor::create(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\GridField\GridFieldConfig_RelationEditor
 
 ## GridFieldConfig_RelationEditor
 
@@ -6326,6 +5119,7 @@ gridfieldconfig_relationeditor-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6334,19 +5128,9 @@ gridfieldconfig_relationeditor-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 GridFieldConfig_RelationEditor::create(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldDeleteAction
 
@@ -6360,6 +5144,7 @@ gridfielddeleteaction-ss-gridfieldextensions-0.0+
 #### Composer
 
 
+ - symbiote/gridfieldextensions
 
 #### Language
 
@@ -6368,19 +5153,9 @@ gridfielddeleteaction-ss-gridfieldextensions-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 new GridFieldDeleteAction()${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldEditableColumns
 
@@ -6394,6 +5169,7 @@ gridfieldeditablecolumns-ss-gridfieldextensions-0.0+
 #### Composer
 
 
+ - symbiote/gridfieldextensions
 
 #### Language
 
@@ -6402,19 +5178,9 @@ gridfieldeditablecolumns-ss-gridfieldextensions-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 new GridFieldEditableColumns()${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldOrderableRows
 
@@ -6428,6 +5194,7 @@ gridfieldorderablerows-ss-gridfieldextensions-0.0+
 #### Composer
 
 
+ - symbiote/gridfieldextensions
 
 #### Language
 
@@ -6436,19 +5203,9 @@ gridfieldorderablerows-ss-gridfieldextensions-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 new GridFieldOrderableRows(${1:'Sort'})${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldSortableRows - sortablegridfield
 
@@ -6462,6 +5219,7 @@ gridfieldsortablerowssortablegridfield-ss-sortablegridfield-0.0+
 #### Composer
 
 
+ - undefinedoffset/sortablegridfield
 
 #### Language
 
@@ -6470,19 +5228,9 @@ gridfieldsortablerowssortablegridfield-ss-sortablegridfield-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 new GridFieldSortableRows(${1:'Sort'})${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldTitleHeader
 
@@ -6496,6 +5244,7 @@ gridfieldtitleheader-ss-gridfieldextensions-0.0+
 #### Composer
 
 
+ - symbiote/gridfieldextensions
 
 #### Language
 
@@ -6504,19 +5253,9 @@ gridfieldtitleheader-ss-gridfieldextensions-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 new GridFieldTitleHeader()${0}
 ```
-
-#### Use items
-
-
 
 ## GridFieldToolbarHeader
 
@@ -6530,6 +5269,7 @@ gridfieldtoolbarheader-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6538,20 +5278,14 @@ gridfieldtoolbarheader-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\GridField\GridFieldToolbarHeader
 
 ```
 
 ```
 new GridFieldToolbarHeader()${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\GridField\GridFieldToolbarHeader
 
 ## GroupedDropdownField
 
@@ -6565,6 +5299,7 @@ groupeddropdownfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6573,9 +5308,8 @@ groupeddropdownfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\GroupedDropdownField
 
 ```
 
@@ -6586,11 +5320,6 @@ GroupedDropdownField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\GroupedDropdownField
 
 ## GroupedDropdownField
 
@@ -6604,6 +5333,7 @@ groupeddropdownfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6612,12 +5342,6 @@ groupeddropdownfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 GroupedDropdownField::create(
 	'${1:name}',
@@ -6625,10 +5349,6 @@ GroupedDropdownField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Has many relationships
 
@@ -6642,6 +5362,7 @@ hasmanyrelationships-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6649,8 +5370,6 @@ hasmanyrelationships-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -6666,10 +5385,6 @@ private static \$has_many = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Has one relationships
 
 ### Conditions
@@ -6682,6 +5397,7 @@ hasonerelationships-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6689,8 +5405,6 @@ hasonerelationships-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -6706,10 +5420,6 @@ private static \$has_one = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## hasCheckedAtLeast Comparison
 
 ### Conditions
@@ -6722,6 +5432,7 @@ hascheckedatleastcomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -6730,19 +5441,9 @@ hascheckedatleastcomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 hasCheckedAtLeast(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## hasCheckedLessThan Comparison
 
@@ -6756,6 +5457,7 @@ hascheckedlessthancomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -6764,19 +5466,9 @@ hascheckedlessthancomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 hasCheckedLessThan(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## hasCheckedOption Comparison
 
@@ -6790,6 +5482,7 @@ hascheckedoptioncomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -6798,19 +5491,9 @@ hascheckedoptioncomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 hasCheckedOption(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## HeaderField
 
@@ -6824,6 +5507,7 @@ headerfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6832,9 +5516,8 @@ headerfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\HeaderField
 
 ```
 
@@ -6844,11 +5527,6 @@ HeaderField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\HeaderField
 
 ## HiddenField
 
@@ -6862,6 +5540,7 @@ hiddenfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6870,9 +5549,8 @@ hiddenfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\HiddenField
 
 ```
 
@@ -6882,11 +5560,6 @@ HiddenField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\HiddenField
 
 ## HiddenField
 
@@ -6900,6 +5573,7 @@ hiddenfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6908,22 +5582,12 @@ hiddenfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 HiddenField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Hide ancestor
 
@@ -6937,6 +5601,7 @@ hideancestor-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -6944,8 +5609,6 @@ hideancestor-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -6960,10 +5623,6 @@ hideancestor-ss-framework-3.0+
 private static \$hide_ancestor = '${1:PageType}';${0}
 ```
 
-#### Use items
-
-
-
 ## hideIf Condition
 
 ### Conditions
@@ -6976,6 +5635,7 @@ hideifcondition-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -6984,19 +5644,9 @@ hideifcondition-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 hideIf(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## hideUnless Condition
 
@@ -7010,6 +5660,7 @@ hideunlesscondition-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7018,19 +5669,9 @@ hideunlesscondition-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 hideUnless(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## HTMLEditorField
 
@@ -7044,6 +5685,7 @@ htmleditorfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -7052,9 +5694,8 @@ htmleditorfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\HTMLEditor\HtmlEditorField
 
 ```
 
@@ -7064,11 +5705,6 @@ HtmlEditorField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\HTMLEditor\HtmlEditorField
 
 ## If
 
@@ -7082,32 +5718,22 @@ if-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% if ${1} %>
 	${2}
 <% end_if %>${0}
 ```
-
-#### Use items
-
-
 
 ## If else
 
@@ -7121,22 +5747,16 @@ ifelse-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 <% if ${1} %>
@@ -7145,10 +5765,6 @@ ifelse-ss-framework-3.0+
 	${3}
 <% end_if %>${0}
 ```
-
-#### Use items
-
-
 
 ## If Loop
 
@@ -7162,22 +5778,16 @@ ifloop-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 <% if ${1} %>
@@ -7186,10 +5796,6 @@ ifloop-ss-framework-3.0+
 	<% end_loop %>
 <% end_if %>${0}
 ```
-
-#### Use items
-
-
 
 ## If not
 
@@ -7203,32 +5809,22 @@ ifnot-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% if not ${1} %>
 	${2}
 <% end_if %>${0}
 ```
-
-#### Use items
-
-
 
 ## if With
 
@@ -7242,22 +5838,16 @@ ifwith-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 <% if ${1} %>
@@ -7266,10 +5856,6 @@ ifwith-ss-framework-3.0+
 	<% end_with %>
 <% end_if %>${0}
 ```
-
-#### Use items
-
-
 
 ## Image
 
@@ -7283,6 +5869,7 @@ image-ss-assets-1.0+
 #### Composer
 
 
+ - silverstripe/assets
 
 #### Language
 
@@ -7291,20 +5878,14 @@ image-ss-assets-1.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Assets\Image
 
 ```
 
 ```
 Image::class${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Assets\Image
 
 ## Include
 
@@ -7318,30 +5899,20 @@ include-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% include ${1} %>${0}
 ```
-
-#### Use items
-
-
 
 ## inSection Linking Mode
 
@@ -7355,30 +5926,20 @@ insectionlinkingmode-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 inSection(${1:page-url})${0}
 ```
-
-#### Use items
-
-
 
 ## isBetween Comparison
 
@@ -7392,6 +5953,7 @@ isbetweencomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7400,19 +5962,9 @@ isbetweencomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isBetween(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## isChecked Comparison
 
@@ -7426,6 +5978,7 @@ ischeckedcomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7434,19 +5987,9 @@ ischeckedcomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isChecked()${0}
 ```
-
-#### Use items
-
-
 
 ## isCurrent Linking Mode
 
@@ -7460,30 +6003,20 @@ iscurrentlinkingmode-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isCurrent${0}
 ```
-
-#### Use items
-
-
 
 ## isEmpty Comparison
 
@@ -7497,6 +6030,7 @@ isemptycomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7505,19 +6039,9 @@ isemptycomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isEmpty(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## isEqualTo Comparison
 
@@ -7531,6 +6055,7 @@ isequaltocomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7539,19 +6064,9 @@ isequaltocomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isEqualTo(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## isGreaterThan Comparison
 
@@ -7565,6 +6080,7 @@ isgreaterthancomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7573,19 +6089,9 @@ isgreaterthancomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isGreaterThan(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## isLessThan Comparison
 
@@ -7599,6 +6105,7 @@ islessthancomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7607,19 +6114,9 @@ islessthancomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isLessThan(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## isNotChecked Comparison
 
@@ -7633,6 +6130,7 @@ isnotcheckedcomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7641,19 +6139,9 @@ isnotcheckedcomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isNotChecked()${0}
 ```
-
-#### Use items
-
-
 
 ## isNotEmpty Comparison
 
@@ -7667,6 +6155,7 @@ isnotemptycomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7675,19 +6164,9 @@ isnotemptycomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isNotEmpty(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## isNotEqualTo Comparison
 
@@ -7701,6 +6180,7 @@ isnotequaltocomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -7709,19 +6189,9 @@ isnotequaltocomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isNotEqualTo(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## isSection Linking Mode
 
@@ -7735,30 +6205,20 @@ issectionlinkingmode-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 isSection${0}
 ```
-
-#### Use items
-
-
 
 ## LabelField
 
@@ -7772,6 +6232,7 @@ labelfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -7780,9 +6241,8 @@ labelfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\LabelField
 
 ```
 
@@ -7792,11 +6252,6 @@ LabelField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\LabelField
 
 ## LabelField
 
@@ -7810,6 +6265,7 @@ labelfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -7818,22 +6274,12 @@ labelfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 LabelField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Level
 
@@ -7847,30 +6293,20 @@ level-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Level(${1:1})${0}
 ```
-
-#### Use items
-
-
 
 ## Limit Characters
 
@@ -7884,31 +6320,21 @@ limitcharacters-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 LimitCharacters(${1:20},${2:'...'})${0}
 ```
-
-#### Use items
-
-
 
 ## Limit Word Count
 
@@ -7922,31 +6348,21 @@ limitwordcount-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 LimitWordCount(${1:26},${2:'...'})${0}
 ```
-
-#### Use items
-
-
 
 ## Link - Linkable
 
@@ -7960,6 +6376,7 @@ linklinkable-ss-silverstripe-linkable-2.0+
 #### Composer
 
 
+ - sheadawson/silverstripe-linkable
 
 #### Language
 
@@ -7968,20 +6385,14 @@ linklinkable-ss-silverstripe-linkable-2.0+
 
 ### Content
 
-#### Body
-
 ```
+use Sheadawson\Linkable\Models
 
 ```
 
 ```
 Link::class${0}
 ```
-
-#### Use items
-
-
- - Sheadawson\Linkable\Models
 
 ## Link - silverstripe-link
 
@@ -7995,6 +6406,7 @@ linksilverstripelink-ss-silverstripe-link-0.0+
 #### Composer
 
 
+ - gorriecoe/silverstripe-link
 
 #### Language
 
@@ -8003,20 +6415,14 @@ linksilverstripelink-ss-silverstripe-link-0.0+
 
 ### Content
 
-#### Body
-
 ```
+use gorriecoe\Link\Models\Link
 
 ```
 
 ```
 Link::class${0}
 ```
-
-#### Use items
-
-
- - gorriecoe\Link\Models\Link
 
 ## LinkField - Linkable
 
@@ -8030,6 +6436,7 @@ linkfieldlinkable-ss-silverstripe-linkable-2.0+
 #### Composer
 
 
+ - sheadawson/silverstripe-linkable
 
 #### Language
 
@@ -8038,9 +6445,10 @@ linkfieldlinkable-ss-silverstripe-linkable-2.0+
 
 ### Content
 
-#### Body
-
 ```
+use Sheadawson\Linkable\Models
+
+use Sheadawson\Linkable\Forms\LinkField
 
 ```
 
@@ -8050,12 +6458,6 @@ LinkField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - Sheadawson\Linkable\Models
- - Sheadawson\Linkable\Forms\LinkField
 
 ## LinkField - silverstripe-link
 
@@ -8069,6 +6471,7 @@ linkfieldsilverstripelink-ss-silverstripe-linkfield-0.0+
 #### Composer
 
 
+ - gorriecoe/silverstripe-linkfield
 
 #### Language
 
@@ -8077,9 +6480,10 @@ linkfieldsilverstripelink-ss-silverstripe-linkfield-0.0+
 
 ### Content
 
-#### Body
-
 ```
+use gorriecoe\Link\Models\Link
+
+use gorriecoe\LinkField\LinkField
 
 ```
 
@@ -8090,12 +6494,6 @@ LinkField::create(
 	${3:$this}
 )${0}
 ```
-
-#### Use items
-
-
- - gorriecoe\Link\Models\Link
- - gorriecoe\LinkField\LinkField
 
 ## ListboxField
 
@@ -8109,6 +6507,7 @@ listboxfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8117,9 +6516,8 @@ listboxfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\ListboxField
 
 ```
 
@@ -8130,11 +6528,6 @@ ListboxField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\ListboxField
 
 ## ListboxField
 
@@ -8148,6 +6541,7 @@ listboxfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8156,12 +6550,6 @@ listboxfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 ListboxField::create(
 	'${1:name}',
@@ -8169,10 +6557,6 @@ ListboxField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## LookupField
 
@@ -8186,6 +6570,7 @@ lookupfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8194,9 +6579,8 @@ lookupfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\LookupField
 
 ```
 
@@ -8207,11 +6591,6 @@ LookupField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\LookupField
 
 ## LookupField
 
@@ -8225,6 +6604,7 @@ lookupfield-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8233,12 +6613,6 @@ lookupfield-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 LookupField::create(
 	'${1:name}',
@@ -8246,10 +6620,6 @@ LookupField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Loop
 
@@ -8263,32 +6633,22 @@ loop-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% loop ${1} %>
 	${2}
 <% end_loop %>${0}
 ```
-
-#### Use items
-
-
 
 ## Main translator function
 
@@ -8302,6 +6662,7 @@ _t-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8310,22 +6671,12 @@ _t-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 _t(
 	__CLASS__ . '.${1/([a-zA-Z]*)([^a-zA-Z]*)/\U$1/}',
 	'${2:${1}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Main translator function
 
@@ -8339,30 +6690,20 @@ _t-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <%t ${1/([a-zA-Z.]*)([^a-zA-Z.]*)/\U$1/} '${2:${1}}' %>${0}
 ```
-
-#### Use items
-
-
 
 ## Many many extraFields
 
@@ -8376,6 +6717,7 @@ manymanyextrafields-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8383,8 +6725,6 @@ manymanyextrafields-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -8402,10 +6742,6 @@ private static \$many_many_extraFields = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Many many relationships
 
 ### Conditions
@@ -8418,6 +6754,7 @@ manymanyrelationships-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8425,8 +6762,6 @@ manymanyrelationships-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -8442,10 +6777,6 @@ private static \$many_many = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Menu
 
 ### Conditions
@@ -8458,30 +6789,20 @@ menu-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Menu(${1:page-url})${0}
 ```
-
-#### Use items
-
-
 
 ## Menu icon
 
@@ -8495,6 +6816,7 @@ menuicon-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8502,8 +6824,6 @@ menuicon-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -8517,10 +6837,6 @@ menuicon-ss-framework-3.0+
 private static \$menu_icon = '${1}';${0}
 ```
 
-#### Use items
-
-
-
 ## Menu title
 
 ### Conditions
@@ -8533,6 +6849,7 @@ menutitle-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8540,8 +6857,6 @@ menutitle-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -8555,10 +6870,6 @@ menutitle-ss-framework-3.0+
 private static \$menu_title = '${1}';${0}
 ```
 
-#### Use items
-
-
-
 ## Menu Title
 
 ### Conditions
@@ -8571,31 +6882,21 @@ menutitle-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 MenuTitle${0}
 ```
-
-#### Use items
-
-
 
 ## MetaTags
 
@@ -8609,31 +6910,21 @@ metatags-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 MetaTags${0}
 ```
 
-#### Use items
-
-
-
 ## No HTML
 
 ### Conditions
@@ -8646,30 +6937,20 @@ nohtml-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 NoHTML${0}
 ```
-
-#### Use items
-
-
 
 ## No HTML
 
@@ -8683,6 +6964,7 @@ nohtml-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8691,19 +6973,9 @@ nohtml-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 NoHTML()${0}
 ```
-
-#### Use items
-
-
 
 ## NullableField
 
@@ -8717,6 +6989,7 @@ nullablefield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8725,9 +6998,8 @@ nullablefield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\NullableField
 
 ```
 
@@ -8737,11 +7009,6 @@ NullableField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\NullableField
 
 ## NullableField
 
@@ -8755,6 +7022,7 @@ nullablefield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8763,22 +7031,12 @@ nullablefield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 NullableField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## NumericField
 
@@ -8792,6 +7050,7 @@ numericfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8800,9 +7059,8 @@ numericfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\NumericField
 
 ```
 
@@ -8812,11 +7070,6 @@ NumericField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\NumericField
 
 ## NumericField
 
@@ -8830,6 +7083,7 @@ numericfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8838,22 +7092,12 @@ numericfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 NumericField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## NumericField readonly
 
@@ -8867,6 +7111,7 @@ numericfieldreadonly-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8875,9 +7120,8 @@ numericfieldreadonly-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\NumericField_Readonly
 
 ```
 
@@ -8887,11 +7131,6 @@ NumericField_Readonly::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\NumericField_Readonly
 
 ## NumericField readonly
 
@@ -8905,6 +7144,7 @@ numericfieldreadonly-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8913,22 +7153,12 @@ numericfieldreadonly-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 NumericField_Readonly::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## onAfterDelete event handler
 
@@ -8942,6 +7172,7 @@ onafterdeleteeventhandler-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8949,8 +7180,6 @@ onafterdeleteeventhandler-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -8969,10 +7198,6 @@ public function onAfterDelete()
 }
 ```
 
-#### Use items
-
-
-
 ## onAfterWrite event handler
 
 ### Conditions
@@ -8985,6 +7210,7 @@ onafterwriteeventhandler-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -8992,8 +7218,6 @@ onafterwriteeventhandler-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -9012,10 +7236,6 @@ public function onAfterWrite()
 }
 ```
 
-#### Use items
-
-
-
 ## onBeforeDelete event handler
 
 ### Conditions
@@ -9028,6 +7248,7 @@ onbeforedeleteeventhandler-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9035,8 +7256,6 @@ onbeforedeleteeventhandler-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -9055,10 +7274,6 @@ public function onBeforeDelete()
 }
 ```
 
-#### Use items
-
-
-
 ## onBeforeWrite event handler
 
 ### Conditions
@@ -9071,6 +7286,7 @@ onbeforewriteeventhandler-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9078,8 +7294,6 @@ onbeforewriteeventhandler-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -9098,10 +7312,6 @@ public function onBeforeWrite()
 }
 ```
 
-#### Use items
-
-
-
 ## OptionsetField
 
 ### Conditions
@@ -9114,6 +7324,7 @@ optionsetfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9122,9 +7333,8 @@ optionsetfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\OptionsetField
 
 ```
 
@@ -9135,11 +7345,6 @@ OptionsetField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\OptionsetField
 
 ## OptionsetField
 
@@ -9153,6 +7358,7 @@ optionsetfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9161,12 +7367,6 @@ optionsetfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 OptionsetField::create(
 	'${1:name}',
@@ -9174,10 +7374,6 @@ OptionsetField::create(
 	'${3:datalist}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Pad image
 
@@ -9191,31 +7387,21 @@ padimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Pad(${1:width},${2:${1:height}},${3:#fff})${0}
 ```
-
-#### Use items
-
-
 
 ## Pad image
 
@@ -9229,31 +7415,21 @@ padimage-ss-framework--3.2
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 PaddedImage(${1:width},${2:${1:height}},${3:#fff})${0}
 ```
-
-#### Use items
-
-
 
 ## Page
 
@@ -9267,30 +7443,20 @@ page-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Page(${1:page-url})${0}
 ```
-
-#### Use items
-
-
 
 ## Permission check
 
@@ -9304,6 +7470,7 @@ permissioncheck-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9312,20 +7479,14 @@ permissioncheck-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Security\Permission
 
 ```
 
 ```
 Permission::check(${1:string|array}, ${2:'any'}, ${3:$member})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Security\Permission
 
 ## Permission check
 
@@ -9339,6 +7500,7 @@ permissioncheck-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9347,19 +7509,9 @@ permissioncheck-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Permission::check(${1:string|array}, ${2:'any'}, ${3:$member})${0}
 ```
-
-#### Use items
-
-
 
 ## Plural name
 
@@ -9373,6 +7525,7 @@ pluralname-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9380,8 +7533,6 @@ pluralname-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -9395,10 +7546,6 @@ pluralname-ss-framework-3.0+
 private static \$plural_name = '${1}';${0}
 ```
 
-#### Use items
-
-
-
 ## providePermissions
 
 ### Conditions
@@ -9411,6 +7558,7 @@ providepermissions-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9419,7 +7567,10 @@ providepermissions-ss-framework-4.0+
 
 ### Content
 
-#### Body
+```
+use SilverStripe\Security\PermissionProvider
+
+```
 
 ```
 /**
@@ -9438,11 +7589,6 @@ public function providePermissions()
 	];
 }${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Security\PermissionProvider
 
 ## providePermissions
 
@@ -9456,6 +7602,7 @@ providepermissions-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9463,8 +7610,6 @@ providepermissions-ss-framework-3.0-4.0
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -9484,10 +7629,6 @@ public function providePermissions()
 }${0}
 ```
 
-#### Use items
-
-
-
 ## ReadonlyField
 
 ### Conditions
@@ -9500,6 +7641,7 @@ readonlyfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9508,9 +7650,8 @@ readonlyfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\ReadonlyField
 
 ```
 
@@ -9520,11 +7661,6 @@ ReadonlyField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\ReadonlyField
 
 ## ReadonlyField
 
@@ -9538,6 +7674,7 @@ readonlyfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9546,22 +7683,12 @@ readonlyfield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 ReadonlyField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Redirect
 
@@ -9575,6 +7702,7 @@ redirect-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9583,20 +7711,14 @@ redirect-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Control\Director
 
 ```
 
 ```
 Director::redirect(${1})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Control\Director
 
 ## Redirect
 
@@ -9610,6 +7732,7 @@ redirect-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9618,19 +7741,9 @@ redirect-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Director::redirect(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Relationship ownership
 
@@ -9644,6 +7757,7 @@ owns-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9651,8 +7765,6 @@ owns-ss-framework-4.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -9671,10 +7783,6 @@ private static \$owns = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Relative Link
 
 ### Conditions
@@ -9687,31 +7795,21 @@ relativelink-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Link${0}
 ```
-
-#### Use items
-
-
 
 ## Remove extra class
 
@@ -9725,6 +7823,7 @@ removeextraclass-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9733,19 +7832,9 @@ removeextraclass-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 removeExtraClass('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## removeByName
 
@@ -9759,6 +7848,7 @@ removebyname-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9767,21 +7857,11 @@ removebyname-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 removeByName([
 	'${0}'
 ]);
 ```
-
-#### Use items
-
-
 
 ## removeComponentsByType
 
@@ -9795,6 +7875,7 @@ removecomponentsbytype-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9803,19 +7884,9 @@ removecomponentsbytype-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 removeComponentsByType(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Require CSS
 
@@ -9829,30 +7900,20 @@ requirecss-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% require css('${1}') %>${0}
 ```
-
-#### Use items
-
-
 
 ## Require CSS
 
@@ -9866,6 +7927,7 @@ requirecss-ss-framework--4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9874,19 +7936,9 @@ requirecss-ss-framework--4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Requirements::css('${1}');${0}
 ```
-
-#### Use items
-
-
 
 ## Require CSS
 
@@ -9900,6 +7952,7 @@ requirecss-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9908,20 +7961,14 @@ requirecss-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\View\Requirements
 
 ```
 
 ```
 Requirements::css('${1}');${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\View\Requirements
 
 ## Require Javascript
 
@@ -9935,30 +7982,20 @@ requirejavascript-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% require javascript('${1}') %>${0}
 ```
-
-#### Use items
-
-
 
 ## Require Javascript
 
@@ -9972,6 +8009,7 @@ requirejavascript-ss-framework--4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -9980,19 +8018,9 @@ requirejavascript-ss-framework--4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Requirements::javascript('${1}');${0}
 ```
-
-#### Use items
-
-
 
 ## Require Javascript
 
@@ -10006,6 +8034,7 @@ requirejavascript-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10014,20 +8043,14 @@ requirejavascript-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\View\Requirements
 
 ```
 
 ```
 Requirements::javascript('${1}');${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\View\Requirements
 
 ## Require themed CSS
 
@@ -10041,30 +8064,20 @@ requirethemedcss-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% require themedCSS('${1}') %>${0}
 ```
-
-#### Use items
-
-
 
 ## Require themed CSS
 
@@ -10078,6 +8091,7 @@ requirethemedcss-ss-framework--4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10086,19 +8100,9 @@ requirethemedcss-ss-framework--4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Requirements::themedCSS('${1}');${0}
 ```
-
-#### Use items
-
-
 
 ## Require themed CSS
 
@@ -10112,6 +8116,7 @@ requirethemedcss-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10120,20 +8125,14 @@ requirethemedcss-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\View\Requirements
 
 ```
 
 ```
 Requirements::themedCSS('${1}');${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\View\Requirements
 
 ## Require themed javascript
 
@@ -10147,30 +8146,20 @@ requirethemedjavascript-ss-framework-3.5+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% require themedJavascript('${1}') %>${0}
 ```
-
-#### Use items
-
-
 
 ## Require themed javascript
 
@@ -10184,6 +8173,7 @@ requirethemedjavascript-ss-framework-3.5-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10192,19 +8182,9 @@ requirethemedjavascript-ss-framework-3.5-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Requirements::themedJavascript('${1}');${0}
 ```
-
-#### Use items
-
-
 
 ## Require themed javascript
 
@@ -10218,6 +8198,7 @@ requirethemedjavascript-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10226,20 +8207,14 @@ requirethemedjavascript-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\View\Requirements
 
 ```
 
 ```
 Requirements::themedJavascript('${1}');${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\View\Requirements
 
 ## Required
 
@@ -10253,6 +8228,7 @@ required-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10261,19 +8237,9 @@ required-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Required()${0}
 ```
-
-#### Use items
-
-
 
 ## Requirement block
 
@@ -10287,6 +8253,7 @@ requirementblock-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10295,20 +8262,14 @@ requirementblock-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\View\Requirements
 
 ```
 
 ```
 Requirements::block('${1}');${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\View\Requirements
 
 ## Scale Height Image
 
@@ -10322,31 +8283,21 @@ scaleheightimage-ss-framework--3.2
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 SetHeight(${1:height})${0}
 ```
-
-#### Use items
-
-
 
 ## Scale Height Image
 
@@ -10360,31 +8311,21 @@ scaleheightimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 ScaleHeight(${1:height})${0}
 ```
-
-#### Use items
-
-
 
 ## Scale Max Height Image
 
@@ -10398,31 +8339,21 @@ scalemaxheightimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 ScaleMaxHeight(${1:height})${0}
 ```
-
-#### Use items
-
-
 
 ## Scale Max Width Image
 
@@ -10436,30 +8367,20 @@ scalemaxwidthimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 ScaleMaxWidth(${1:width})${0}
 ```
-
-#### Use items
-
-
 
 ## Scale Width Image
 
@@ -10473,31 +8394,21 @@ scalewidthimage-ss-framework--3.2
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 SetWidth(${1:width})${0}
 ```
-
-#### Use items
-
-
 
 ## Scale Width Image
 
@@ -10511,31 +8422,21 @@ scalewidthimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 ScaleWidth(${1:width})${0}
 ```
-
-#### Use items
-
-
 
 ## Searchable fields
 
@@ -10549,6 +8450,7 @@ searchablefields-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10556,8 +8458,6 @@ searchablefields-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -10573,10 +8473,6 @@ private static \$searchable_fields = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## SegmentField
 
 ### Conditions
@@ -10589,6 +8485,8 @@ segmentfield-ss-segment-field-2.0+
 #### Composer
 
 
+ - silverstripe/segment-field
+ - silverstripe/framework
 
 #### Language
 
@@ -10597,9 +8495,8 @@ segmentfield-ss-segment-field-2.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\SegmentField
 
 ```
 
@@ -10609,11 +8506,6 @@ SegmentField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\SegmentField
 
 ## SegmentField
 
@@ -10627,6 +8519,7 @@ segmentfield-ss-segment-field--2.0
 #### Composer
 
 
+ - silverstripe/segment-field
 
 #### Language
 
@@ -10635,22 +8528,12 @@ segmentfield-ss-segment-field--2.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 SegmentField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Set allowed extensions
 
@@ -10664,6 +8547,7 @@ setallowedextensions-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10672,19 +8556,9 @@ setallowedextensions-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setAllowedExtensions(array(${1}))${0}
 ```
-
-#### Use items
-
-
 
 ## Set allowed file categories
 
@@ -10698,6 +8572,7 @@ setallowedfilecategories-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10706,19 +8581,9 @@ setallowedfilecategories-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setAllowedFileCategories(array(${1}))${0}
 ```
-
-#### Use items
-
-
 
 ## Set allowed max file number
 
@@ -10732,6 +8597,7 @@ setallowedmaxfilenumber-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10740,19 +8606,9 @@ setallowedmaxfilenumber-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setAllowedMaxFileNumber(${1:null})${0}
 ```
-
-#### Use items
-
-
 
 ## Set can attach existing
 
@@ -10766,6 +8622,7 @@ setcanattachexisting-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10774,19 +8631,9 @@ setcanattachexisting-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setCanAttachExisting(${1:true})${0}
 ```
-
-#### Use items
-
-
 
 ## Set can upload
 
@@ -10800,6 +8647,7 @@ setcanupload-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10808,19 +8656,9 @@ setcanupload-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setCanUpload(${1:true})${0}
 ```
-
-#### Use items
-
-
 
 ## Set description
 
@@ -10834,6 +8672,7 @@ setdescription-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10842,19 +8681,9 @@ setdescription-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setDescription('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## Set folder name
 
@@ -10868,6 +8697,7 @@ setfoldername-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10876,19 +8706,9 @@ setfoldername-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setFolderName('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## Set Ratio Size Image
 
@@ -10902,31 +8722,21 @@ setratiosizeimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 SetRatioSize(${1:width},${2:${1:height}})${0}
 ```
-
-#### Use items
-
-
 
 ## Set session value
 
@@ -10940,6 +8750,7 @@ sessionset-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10948,20 +8759,14 @@ sessionset-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Control\Session
 
 ```
 
 ```
 Session::set('${1}', ${2})${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Control\Session
 
 ## Set session value
 
@@ -10975,6 +8780,7 @@ sessionset-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -10983,19 +8789,9 @@ sessionset-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Session::set('${1}', ${2})${0}
 ```
-
-#### Use items
-
-
 
 ## Set Size Image
 
@@ -11009,31 +8805,21 @@ setsizeimage-ss-framework-3.2+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 SetSize(${1:width},${2:${1:height}})${0}
 ```
-
-#### Use items
-
-
 
 ## setAttribute
 
@@ -11047,6 +8833,7 @@ setattribute-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11055,19 +8842,9 @@ setattribute-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setAttribute('${1}', '${2}')${0}
 ```
-
-#### Use items
-
-
 
 ## setColumns
 
@@ -11081,6 +8858,7 @@ setcolumns-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11089,19 +8867,9 @@ setcolumns-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setColumns(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## setEmptyString
 
@@ -11115,6 +8883,7 @@ setemptystring-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11123,19 +8892,9 @@ setemptystring-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setEmptyString('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## setLeftTitle
 
@@ -11149,6 +8908,7 @@ setlefttitle-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11157,19 +8917,9 @@ setlefttitle-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setLeftTitle('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## setName
 
@@ -11183,6 +8933,7 @@ setname-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11191,19 +8942,9 @@ setname-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setName('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## setRightTitle
 
@@ -11217,6 +8958,7 @@ setrighttitle-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11225,19 +8967,9 @@ setrighttitle-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setRightTitle('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## setRows
 
@@ -11251,6 +8983,7 @@ setrows-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11259,19 +8992,9 @@ setrows-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setRows(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## setTitle
 
@@ -11285,6 +9008,7 @@ settitle-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11293,19 +9017,9 @@ settitle-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setTitle('${1}')${0}
 ```
-
-#### Use items
-
-
 
 ## setValue
 
@@ -11319,6 +9033,7 @@ setvalue-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11327,19 +9042,9 @@ setvalue-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 setValue(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## Show in sitetree
 
@@ -11353,6 +9058,7 @@ showinsitetree-ss-lumberjack-0.0+
 #### Composer
 
 
+ - silverstripe/lumberjack
 
 #### Language
 
@@ -11360,8 +9066,6 @@ showinsitetree-ss-lumberjack-0.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -11375,10 +9079,6 @@ showinsitetree-ss-lumberjack-0.0+
 private static $show_in_sitetree = ${1:false};${0}
 ```
 
-#### Use items
-
-
-
 ## Singular name
 
 ### Conditions
@@ -11391,6 +9091,7 @@ singularname-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11398,8 +9099,6 @@ singularname-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -11413,9 +9112,38 @@ singularname-ss-framework-3.0+
 private static \$singular_name = '${1}';${0}
 ```
 
-#### Use items
+## SortableUploadField - sortablefile
+
+### Conditions
+
+#### Prefix or Autocomplete
 
 
+sortableuploadfieldsortablefile-ss-sortablefile-0.0+
+
+#### Composer
+
+
+ - bummzack/sortablefile
+
+#### Language
+
+
+ - php
+
+### Content
+
+```
+use Bummzack\SortableFile\Forms\SortableUploadField
+
+```
+
+```
+SortableUploadField::create(
+	'${1:name}',
+	'${2:${1:title}}'
+)${0}
+```
 
 ## SortableUploadField - sortablefile
 
@@ -11429,6 +9157,7 @@ sortableuploadfieldsortablefile-ss-sortablefile-0.0+
 #### Composer
 
 
+ - bummzack/sortablefile
 
 #### Language
 
@@ -11437,60 +9166,12 @@ sortableuploadfieldsortablefile-ss-sortablefile-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 SortableUploadField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - Bummzack\SortableFile\Forms\SortableUploadField
-
-## SortableUploadField - sortablefile
-
-### Conditions
-
-#### Prefix or Autocomplete
-
-
-sortableuploadfieldsortablefile-ss-sortablefile-0.0+
-
-#### Composer
-
-
-
-#### Language
-
-
- - php
-
-### Content
-
-#### Body
-
-```
-
-```
-
-```
-SortableUploadField::create(
-	'${1:name}',
-	'${2:${1:title}}'
-)${0}
-```
-
-#### Use items
-
-
 
 ## SS_Log
 
@@ -11504,6 +9185,7 @@ ss_log-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11512,21 +9194,16 @@ ss_log-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use Psr\Log\LoggerInterface
+
+use SilverStripe\Core\Injector\Injector
 
 ```
 
 ```
 Injector::inst()->get(LoggerInterface::class)->${2:error}('${1}');${0}
 ```
-
-#### Use items
-
-
- - Psr\Log\LoggerInterface
- - SilverStripe\Core\Injector\Injector
 
 ## SS_Log
 
@@ -11540,6 +9217,7 @@ ss_log-ss-framework--4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11548,19 +9226,9 @@ ss_log-ss-framework--4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 SS_Log::log('${1}', ${2:SS_Log::ERR});${0}
 ```
-
-#### Use items
-
-
 
 ## startsWith Comparison
 
@@ -11574,6 +9242,7 @@ startswithcomparison-ss-display-logic-0.0+
 #### Composer
 
 
+ - unclecheese/display-logic
 
 #### Language
 
@@ -11582,19 +9251,9 @@ startswithcomparison-ss-display-logic-0.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 startsWith(${1})${0}
 ```
-
-#### Use items
-
-
 
 ## StringTagField
 
@@ -11608,6 +9267,7 @@ stringtagfield-ss-tagfield-0.0+
 #### Composer
 
 
+ - silverstripe/tagfield
 
 #### Language
 
@@ -11615,12 +9275,6 @@ stringtagfield-ss-tagfield-0.0+
  - php
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 StringTagField::create(
@@ -11630,10 +9284,6 @@ StringTagField::create(
 	explode(',', \$this->${1:name})
 )${0}
 ```
-
-#### Use items
-
-
 
 ## Summary fields
 
@@ -11647,6 +9297,7 @@ summaryfields-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11654,8 +9305,6 @@ summaryfields-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -11672,10 +9321,6 @@ private static \$summary_fields = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Table name
 
 ### Conditions
@@ -11688,6 +9333,7 @@ tablename-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11695,8 +9341,6 @@ tablename-ss-framework-4.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -11710,10 +9354,6 @@ tablename-ss-framework-4.0+
 private static \$table_name = '${1}';${0}
 ```
 
-#### Use items
-
-
-
 ## TagField
 
 ### Conditions
@@ -11726,6 +9366,7 @@ tagfield-ss-tagfield-0.0+
 #### Composer
 
 
+ - silverstripe/tagfield
 
 #### Language
 
@@ -11733,12 +9374,6 @@ tagfield-ss-tagfield-0.0+
  - php
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 TagField::create(
@@ -11748,10 +9383,6 @@ TagField::create(
 	${4}
 )${0}
 ```
-
-#### Use items
-
-
 
 ## TextareaField
 
@@ -11765,6 +9396,7 @@ textareafield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11773,9 +9405,8 @@ textareafield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\TextareaField
 
 ```
 
@@ -11785,11 +9416,6 @@ TextareaField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\TextareaField
 
 ## TextareaField
 
@@ -11803,6 +9429,7 @@ textareafield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11811,22 +9438,12 @@ textareafield-ss-framework-3.0-4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 TextareaField::create(
 	'${1:name}',
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## TextField
 
@@ -11840,6 +9457,7 @@ textfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11848,9 +9466,8 @@ textfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\TextField
 
 ```
 
@@ -11860,11 +9477,6 @@ TextField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\TextField
 
 ## TextField
 
@@ -11878,6 +9490,7 @@ textfield-ss-framework-3.0-4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11885,12 +9498,6 @@ textfield-ss-framework-3.0-4.0
  - php
 
 ### Content
-
-#### Body
-
-```
-
-```
 
 ```
 TextField::create(
@@ -11899,10 +9506,6 @@ TextField::create(
 )${0}
 ```
 
-#### Use items
-
-
-
 ## Theme directory
 
 ### Conditions
@@ -11915,30 +9518,20 @@ themedirectory-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 ThemeDir${0}
 ```
-
-#### Use items
-
-
 
 ## Theme directory
 
@@ -11952,6 +9545,7 @@ themedirectory-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -11960,19 +9554,9 @@ themedirectory-ss-framework-3.0+
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 $this->ThemeDir()${0}
 ```
-
-#### Use items
-
-
 
 ## Title
 
@@ -11986,31 +9570,21 @@ title-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Title${0}
 ```
-
-#### Use items
-
-
 
 ## Top Level Scope
 
@@ -12024,30 +9598,20 @@ toplevelscope-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Top${0}
 ```
-
-#### Use items
-
-
 
 ## Translatable db fields
 
@@ -12061,6 +9625,7 @@ translatabledbfields-ss-silverstripe-fluent-0.0+
 #### Composer
 
 
+ - tractorcow/silverstripe-fluent
 
 #### Language
 
@@ -12068,8 +9633,6 @@ translatabledbfields-ss-silverstripe-fluent-0.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -12085,10 +9648,6 @@ private static \$translate = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## Traverse Up Scope
 
 ### Conditions
@@ -12101,30 +9660,20 @@ traverseupscope-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 Up${0}
 ```
-
-#### Use items
-
-
 
 ## TreeDropdownField
 
@@ -12138,6 +9687,7 @@ treedropdownfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -12146,9 +9696,10 @@ treedropdownfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\TreeDropdownField
+
+use SilverStripe\CMS\Model\SiteTree
 
 ```
 
@@ -12159,12 +9710,6 @@ TreeDropdownField::create(
 	${3:SiteTree::class}
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\TreeDropdownField
- - SilverStripe\CMS\Model\SiteTree
 
 ## TreeDropdownField
 
@@ -12178,6 +9723,7 @@ treedropdownfield-ss-framework--4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -12186,12 +9732,6 @@ treedropdownfield-ss-framework--4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 TreeDropdownField::create(
 	'${1:name}ID',
@@ -12199,10 +9739,6 @@ TreeDropdownField::create(
 	'${3:SiteTree}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## TreeDropdownField readonly
 
@@ -12216,6 +9752,7 @@ treedropdownfieldreadonly-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -12224,9 +9761,10 @@ treedropdownfieldreadonly-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\Forms\TreeDropdownField_Readonly
+
+use SilverStripe\CMS\Model\SiteTree
 
 ```
 
@@ -12237,12 +9775,6 @@ TreeDropdownField_Readonly::create(
 	${3:SiteTree::class}
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\Forms\TreeDropdownField_Readonly
- - SilverStripe\CMS\Model\SiteTree
 
 ## TreeDropdownField readonly
 
@@ -12256,6 +9788,7 @@ treedropdownfieldreadonly-ss-framework--4.0
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -12264,12 +9797,6 @@ treedropdownfieldreadonly-ss-framework--4.0
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 TreeDropdownField_Readonly::create(
 	'${1:name}ID',
@@ -12277,10 +9804,6 @@ TreeDropdownField_Readonly::create(
 	'${3:SiteTree}'
 )${0}
 ```
-
-#### Use items
-
-
 
 ## updateCMSFields
 
@@ -12294,6 +9817,7 @@ updatecmsfields-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -12302,7 +9826,10 @@ updatecmsfields-ss-framework-4.0+
 
 ### Content
 
-#### Body
+```
+use SilverStripe\Forms\FieldList
+
+```
 
 ```
 /**
@@ -12321,11 +9848,6 @@ public function updateCMSFields(FieldList \$fields)
 }
 ```
 
-#### Use items
-
-
- - SilverStripe\Forms\FieldList
-
 ## UploadField
 
 ### Conditions
@@ -12338,6 +9860,7 @@ uploadfield-ss-framework-4.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -12346,9 +9869,8 @@ uploadfield-ss-framework-4.0+
 
 ### Content
 
-#### Body
-
 ```
+use SilverStripe\AssetAdmin\Forms\UploadField
 
 ```
 
@@ -12358,11 +9880,6 @@ UploadField::create(
 	'${2:${1:title}}'
 )${0}
 ```
-
-#### Use items
-
-
- - SilverStripe\AssetAdmin\Forms\UploadField
 
 ## URL handlers
 
@@ -12376,6 +9893,7 @@ urlhandlers-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
@@ -12383,8 +9901,6 @@ urlhandlers-ss-framework-3.0+
  - php
 
 ### Content
-
-#### Body
 
 ```
 /**
@@ -12400,10 +9916,6 @@ private static \$url_handlers = [
 ];${0}
 ```
 
-#### Use items
-
-
-
 ## URLSegment
 
 ### Conditions
@@ -12416,31 +9928,21 @@ urlsegment-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
  - ss
  - php
- - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 URLSegment${0}
 ```
-
-#### Use items
-
-
 
 ## With
 
@@ -12454,29 +9956,19 @@ with-ss-framework-3.0+
 #### Composer
 
 
+ - silverstripe/framework
 
 #### Language
 
 
- - ss
  - ss
  - silverstripe
  - SilverStripe
 
 ### Content
 
-#### Body
-
-```
-
-```
-
 ```
 <% with ${1} %>
 	${2}
 <% end_with %>${0}
 ```
-
-#### Use items
-
-
