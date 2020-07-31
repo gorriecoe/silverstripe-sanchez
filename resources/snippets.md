@@ -7775,9 +7775,6 @@ owns-ss-framework-4.0+
 ```
 
 ```
-/**
- 
-/
 private static \$owns = [
 	'${1}'
 ];${0}
