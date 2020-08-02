@@ -12,6 +12,12 @@ const silverstripeAliases = [
   'SilverStripe'
 ]
 
+const ymlAliases = [
+  'yml',
+  'yaml',
+  'Yaml'
+]
+
 /**
  * Formats the given language, converting it to an
  * array last given snope to produce the language.
@@ -30,7 +36,17 @@ const format = (language = defaultLanguages) => {
     )
   }
 
-  return languages
+  // If one of the yml aliases are used add them to languages for filtering later.
+  if (arrays.matchOne(languages, ymlAliases)) {
+    languages = languages.concat(
+      ymlAliases
+    )
+  }
+
+  // Remove any duplicates that may be caused by concatinating aliases.
+  return languages.filter((language, index) => {
+    return languages.indexOf(language) === index;
+  })
 }
 
 module.exports = {

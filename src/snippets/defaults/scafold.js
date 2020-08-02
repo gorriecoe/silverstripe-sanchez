@@ -255,7 +255,7 @@ module.exports = {
     body: "private static \\$belongs_many_many = [\n\t'${1}' => '${2}',\n];"
   },
   "Relationship ownership": {
-    "prefix": "owns",
+    prefix: "owns",
     conditions: {
       scope: ".text.html.php",
       composer: {
@@ -263,7 +263,7 @@ module.exports = {
       }
     },
     comment: "Relationship version ownership\n@var array",
-    body: "/**\n \n/\nprivate static \\$owns = [\n\t'${1}'\n];"
+    body: "private static \\$owns = [\n\t'${1}'\n];"
   },
   "Casting": {
     conditions: {

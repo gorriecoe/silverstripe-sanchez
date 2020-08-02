@@ -1,4 +1,4 @@
-const { strings } = require('../utilities')
+const { strings } = require('../../utilities')
 
 module.exports = (requiredPrefix, prefix) => {
   if (!requiredPrefix.length || !prefix.length) {

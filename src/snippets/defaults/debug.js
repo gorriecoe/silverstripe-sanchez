@@ -1,10 +1,7 @@
 module.exports = {
   "Debug message": {
     conditions: {
-      scope: ".text.html.php",
-      composer: {
-        "silverstripe/framework": "3.0+"
-      }
+      scope: ".text.html.php"
     },
     body: "Debug::message(${1});",
     variants: [
@@ -18,15 +15,18 @@ module.exports = {
           "SilverStripe\\Dev\\Debug"
         ]
       },
-      {} // Output top level as variant.
+      {
+        conditions: {
+          composer: {
+            "silverstripe/framework": "-4.0"
+          }
+        }
+      }
     ]
   },
   "Debug show": {
     conditions: {
-      scope: ".text.html.php",
-      composer: {
-        "silverstripe/framework": "3.0+"
-      }
+      scope: ".text.html.php"
     },
     body: "Debug::show(${1});",
     variants: [
@@ -40,7 +40,13 @@ module.exports = {
           "SilverStripe\\Dev\\Debug"
         ]
       },
-      {} // Output top level as variant.
+      {
+        conditions: {
+          composer: {
+            "silverstripe/framework": "-4.0"
+          }
+        }
+      }
     ]
   },
   "Debug log": {
@@ -54,10 +60,7 @@ module.exports = {
   },
   "Debug dump": {
     conditions: {
-      scope: ".text.html.php",
-      composer: {
-        "silverstripe/framework": "3.0+"
-      }
+      scope: ".text.html.php"
     },
     body: "Debug::dump(${1});",
     variants: [
@@ -71,7 +74,13 @@ module.exports = {
           "SilverStripe\\Dev\\Debug"
         ]
       },
-      {} // Output top level as variant.
+      {
+        conditions: {
+          composer: {
+            "silverstripe/framework": "-4.0"
+          }
+        }
+      }
     ]
   },
   "SS_Log": {

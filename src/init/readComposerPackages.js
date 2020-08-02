@@ -3,16 +3,10 @@ const fs = require('fs')
 const json = require('json-file')
 const { version } = require('../utilities')
 
-const filename = 'composer.lock'
-
 module.exports = (paths = []) => {
   const packages = {}
 
-  paths.map(filePath => {
-    filePath = path.resolve(
-      path.join(filePath, filename)
-    )
-
+  paths.forEach(filePath => {
     if (fs.existsSync(filePath)) {
       const packagesFound = json.read(filePath).data.packages
       for (const packageFound in packagesFound) {

@@ -1,4 +1,4 @@
-const { arrays, version } = require('../utilities')
+const { arrays, version } = require('../../utilities')
 
 module.exports = (
   requiredPackages,

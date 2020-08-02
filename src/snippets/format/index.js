@@ -6,7 +6,7 @@
 const isset = require('isset')
 const merge = require('deepmerge')
 const { split, version, scope, language } = require('../../utilities')
-const defaultSnippets = require('./defaults')
+const defaultSnippets = require('../defaults')
 
 const defaults = {
   composerVersion: '0.0+'

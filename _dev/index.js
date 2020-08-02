@@ -1,4 +1,5 @@
 module.exports = {
-  ...require('./webfonts-generator'),
-  ...require('./convert-cson')
+  cheatsheet: require('./cheatsheet-generator'),
+  webfonts: require('./webfonts-generator'),
+  cson: require('./convert-cson')
 }

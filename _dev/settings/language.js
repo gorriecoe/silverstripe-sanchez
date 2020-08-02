@@ -3,8 +3,8 @@ module.exports = {
 		"editor": {
 			"commentStart": "<%-- ",
 			"commentEnd": " --%>",
-			"increaseIndentPattern": "<%\\s*(?:if|else|loop|with|control)|<%t|<(?!area|base|br|col|frame|hr|html|img|input|link|meta|param)[a-zA-Z]+|^\\/>",
-			"decreaseIndentPattern": "<%\\s*end_[a-zA-Z]+|include|require|else]|<\\/?[a-zA-Z]+(\\s\\/)?>"
+			"increaseIndentPattern": "<%\\s+(if|else|loop|with|control|cache|uncache)(?!.*<% end_\\1)|<%t|<(?!area|base|br|col|iframe|hr|html|img|input|link|meta|param)([A-Za-z0-9]+)(?!.*<\/\\2)|^\\/>",
+			"decreaseIndentPattern": "<%\\s+end_[a-zA-Z]+|else]|<\\/[a-zA-Z]+>"
 		}
 	}
 }

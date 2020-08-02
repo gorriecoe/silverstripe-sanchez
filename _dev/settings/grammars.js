@@ -1,25 +1,23 @@
 module.exports = {
   "scopeName": "text.html.ss",
-  "name": "HTML (Silverstripe)",
+  "name": "HTML Silverstripe",
   "fileTypes": [
     "ss"
   ],
-  "foldingStartMarker": "<%\\s[^end].*\\s%>",
-  "foldingStopMarker": "<%\\send.*\\s%>",
+  "foldingStartMarker": "<%\\s+(?:if|else|loop|with|control|cache|uncache)|<%--",
+  "foldingStopMarker": "<%\\s+end_[a-zA-Z]+|else].*\\s%>|--%>",
   "patterns": [
     {
       "include": "text.html.basic"
     },
     {
-      "begin": "<% (include|require)",
-      "end": "-? %>",
-      "name": "keyword.control.import.include.ss"
-    },
-    {
-      "begin": "<% +(?!>)[-=]?",
+      "begin": "<% +(?!>)(include|require)*[-=]?",
       "captures": {
         "0": {
-          "name": "punctuation.section.embedded.ruby"
+          "name": "support.function.ss"
+        },
+        "1": {
+          "name": "keyword.control.import.include.ss"
         }
       },
       "end": "-? %>",
@@ -28,11 +26,11 @@ module.exports = {
         {
           "captures": {
             "1": {
-              "name": "punctuation.definition.comment.ruby"
+              "name": "punctuation.definition.comment"
             }
           },
           "match": "(#).*?(?=-? %>)",
-          "name": "comment.line.number-sign.ruby"
+          "name": "comment.line.number-sign"
         }
       ]
     },
@@ -60,14 +58,14 @@ module.exports = {
     {
       "begin": "<%t",
       "beginCaptures": {
-        "1": {
-          "name": "punctuation.definition.tag.begin.html.ss"
+        "0": {
+          "name": "support.function.ss"
         }
       },
       "end": "-? %>",
       "endCaptures": {
-        "1": {
-          "name": "punctuation.definition.tag.end.html.ss"
+        "0": {
+          "name": "support.function.ss"
         }
       },
       "name": "keyword.control.import.include.ss"
@@ -105,12 +103,12 @@ module.exports = {
   "repository": {
     "ss-variable-open": {
       "match": "\\$(\\.?[\\w]+(\\([\\,\\.'\"\\s\\w]*\\))*)*",
-      "name": "variable.ss"
+      "name": "variable.parameter.ss"
     },
     "ss-variable-closed": {
       "begin": "{\\$",
       "end": "}",
-      "name": "variable.ss"
+      "name": "variable.parameter.ss"
     }
   }
 }

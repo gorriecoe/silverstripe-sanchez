@@ -1,6 +1,5 @@
 const parse = require('parse-config-file')
 const merge = require('deepmerge')
-const homedir = require('os').homedir()
 const path = require('path')
 const fs = require('fs')
 
@@ -10,21 +9,11 @@ let data = {
   snippets: {}
 }
 
-const filename = '.silverstripe_sanchez'
-
 module.exports = (paths = []) => {
-  // Always check the home directory by default.
-  paths.unshift(homedir)
-
   // Find all files called .silverstripe_sanchez and parse the data.
   // We accept cson, json or yml formats
   for (const key in paths) {
     if (key in paths) {
-      const filepath = path.resolve(path.join(
-        paths[key],
-        filename
-      ))
-
       if (fs.existsSync(filepath)) {
         data = merge(
           data,

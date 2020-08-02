@@ -1,13 +1,20 @@
+const finder = require('../finder')
 const readConfig = require('./readConfig')
 const readComposerPackages = require('./readComposerPackages')
 const readNodePackages = require('./readNodePackages')
-const formatSnippets = require('./formatSnippets')
+const formatSnippets = require('../snippets/format')
 
 module.exports = (options) => {
   const data = {
-    ...readConfig(options.configPaths),
-    ...readComposerPackages(options.composerPaths),
-    ...readNodePackages(options.nodePaths),
+    ...readConfig(
+      finder.config(options.rootPaths)
+    ),
+    ...readComposerPackages(
+      finder.composer(options.rootPaths)
+    ),
+    ...readNodePackages(
+      finder.node(options.rootPaths)
+    ),
     ...options.config
   }
 

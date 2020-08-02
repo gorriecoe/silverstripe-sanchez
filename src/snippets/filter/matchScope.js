@@ -1,4 +1,4 @@
-const { arrays, scope } = require('../utilities')
+const { arrays, scope } = require('../../utilities')
 
 module.exports = (requiredScope, compareScope) => {
   return arrays.matchOne(

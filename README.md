@@ -294,31 +294,17 @@ sanchez = null,
 
 activate() {
   sanchez = new Enginez({
-    // Define paths to folders containing '.silverstripe_sanchez' file for
-    // custom config and creating, editing snippets.
-    // This automatically looks in your home directory.
+    // Define the root project path or paths.
     // Expects an array
     // Ordered desc priority
-    configPaths: [
-      'My/Silverstripe/Projects/Folder'
-    ],
+    rootPaths: workspace.project.getPaths(),
 
     // Optionally define config settings.
     // This is handy for settings from the editor itself and has the highest priority.
     config: {
       comments: true,
       useItems: true
-    },
-
-    // Define paths to folders containing 'composer.lock' file to help filter snippets.
-    // Expects an array
-    // Ordered desc priority
-    composerPaths: workspace.project.getPaths(),
-
-    // Define paths to folders containing 'package-lock.json' file to help filter snippets.
-    // Expects an array
-    // Ordered desc priority
-    nodePaths: workspace.project.getPaths(),
+    }
   })
 }
 
