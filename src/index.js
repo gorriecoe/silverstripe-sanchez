@@ -3,6 +3,7 @@ const init = require('./init')
 const injection = require('./injection')
 const theming = require('./theming')
 const { match } = require('./utilities/strings')
+const isset = require('isset')
 
 module.exports = class {
   constructor (options) {
@@ -50,17 +51,18 @@ module.exports = class {
     )
   }
 
-  getDefinitionPath ({ root, type, definition }) {
+  getDefinitionPath ({ rootPath, type, definition }) {
+    const rootPaths = isset(rootPath) ? [ rootPath ] : this.data.rootPaths
     let paths = []
     switch (type) {
       case 'include':
-        paths = theming.include([root])
+        paths = theming.include(rootPaths)
         break;
       case 'ThemedCSS':
-        paths = theming.themedcss([root])
+        paths = theming.themedcss(rootPaths)
         break;
       case 'ThemedJavascript':
-        paths = theming.themedcss([root])
+        paths = theming.themedcss(rootPaths)
         break;
     }
 

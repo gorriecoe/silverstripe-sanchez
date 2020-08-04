@@ -6,6 +6,7 @@ const formatSnippets = require('../snippets/format')
 
 module.exports = (options) => {
   const data = {
+    rootPaths: options.rootPaths,
     ...readConfig(
       finder.config(options.rootPaths)
     ),
