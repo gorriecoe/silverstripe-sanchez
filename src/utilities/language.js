@@ -45,7 +45,7 @@ const format = (language = defaultLanguages) => {
 
   // Remove any duplicates that may be caused by concatinating aliases.
   return languages.filter((language, index) => {
-    return languages.indexOf(language) === index;
+    return languages.indexOf(language) === index
   })
 }
 

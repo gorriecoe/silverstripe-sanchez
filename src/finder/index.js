@@ -14,9 +14,7 @@ const search = (paths, fileName) => {
   paths.forEach(filePath => {
     foundFiles = foundFiles.concat(
       glob.sync(
-        path.resolve(
-          path.join(filePath, '**' ,fileName)
-        ),
+        path.join(filePath, '**' ,fileName),
         options
       )
     )

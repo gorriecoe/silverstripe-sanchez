@@ -1,6 +1,6 @@
-const { search } = require('../../finder')
+const { search } = require('../finder')
 
-module.exports = testett = (paths) => {
+module.exports = (paths) => {
   return search(paths, 'Includes/*.ss').map(includePath => {
     const include = includePath.replace(
       // Remove /themes/, anything before it and the theme name.
@@ -10,16 +10,12 @@ module.exports = testett = (paths) => {
       /^.*\/themes\/.*\/|^.*\/vendor\/|\/templates.*\/Includes|\.ss$/g,
       ''
     )
-    console.log(`<% include ${include} %>`);
+    const name = /([a-zA-Z_]*)\.ss$/.exec(includePath)[1].toLowerCase()
     return {
-      conditions: {
-        prefix: include
-      },
-      suggestion: {
-        body: `<% include ${include} %>`
-      }
+      name: name,
+      path: includePath,
+      definition: include,
+      body: `<% include ${include} %>`
     }
   })
 }
-
-testett(['/Users/gorrie/Projects/mwlr'])

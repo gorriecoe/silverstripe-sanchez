@@ -12,8 +12,8 @@ let data = {
 module.exports = (paths = []) => {
   // Find all files called .silverstripe_sanchez and parse the data.
   // We accept cson, json or yml formats
-  for (const key in paths) {
-    if (key in paths) {
+  for (const filepath in paths) {
+    if (filepath in paths) {
       if (fs.existsSync(filepath)) {
         data = merge(
           data,

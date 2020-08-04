@@ -1,7 +1,8 @@
 const snippets = require('./snippets')
 const init = require('./init')
 const injection = require('./injection')
-const finder = require('./finder')
+const theming = require('./theming')
+const { match } = require('./utilities/strings')
 
 module.exports = class {
   constructor (options) {
@@ -47,5 +48,24 @@ module.exports = class {
       useItems,
       this.data.useItems
     )
+  }
+
+  getDefinitionPath ({ root, type, definition }) {
+    let paths = []
+    switch (type) {
+      case 'include':
+        paths = theming.include([root])
+        break;
+      case 'ThemedCSS':
+        paths = theming.themedcss([root])
+        break;
+      case 'ThemedJavascript':
+        paths = theming.themedcss([root])
+        break;
+    }
+
+    return paths.find(p => {
+      return p.definition === definition
+    }).path
   }
 }
