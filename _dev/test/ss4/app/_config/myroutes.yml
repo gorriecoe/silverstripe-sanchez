@@ -1,0 +1,7 @@
+---
+Name: myroutes
+After: framework/routes#coreroutes
+---
+SilverStripe\Control\Director:
+  rules:
+    myaction//$Action!/$ID!: MyController

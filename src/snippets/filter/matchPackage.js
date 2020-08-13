@@ -2,11 +2,12 @@ const { arrays, version } = require('../../utilities')
 
 module.exports = (
   requiredPackages,
-  packages
+  packages,
+  noPackagesBehavior
 ) => {
-  // Allow all autocompletes if composer packages aren't found.
   if (!packages || !Object.keys(packages).length) {
-    return true
+    // By default allow all snippets if composer|node packages aren't found.
+    return noPackagesBehavior
   }
 
   // Match every package given in the first parameter to the second.

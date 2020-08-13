@@ -1,0 +1,7 @@
+---
+Name: mygraphql
+---
+SilverStripe\GraphQL\Controller:
+  schema:
+    scaffolding_providers:
+      - MyDataObject

@@ -38,6 +38,12 @@ comments: false
 # Default: true
 useItems: true
 
+# Toggle the default behavior when composer and/or node packages aren't detected.
+# true will allow all snippets to pass
+# false will prevent all snippets from passing
+# Default: true
+noPackagesBehavior:
+
 # Define a list of your own snippets.
 snippets:
   "Im a pickle":

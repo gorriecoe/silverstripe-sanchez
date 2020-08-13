@@ -1,5 +1,6 @@
 module.exports = {
   include: require('./include'),
-  themedcss: require('./themedcss'),
-  themedjavascript: require('./themedjavascript')
+  themeCascade: require('./themeCascade'),
+  themedCSS: require('./themedCSS'),
+  themedJavascript: require('./themedJavascript')
 }

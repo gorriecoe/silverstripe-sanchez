@@ -1,13 +1,32 @@
 const snippets = require('./snippets')
 const init = require('./init')
 const injection = require('./injection')
-const theming = require('./theming')
-const { match } = require('./utilities/strings')
-const isset = require('isset')
+const { include, themeCascade, themedCSS, themedJavascript } = require('./theming')
+const config = require('./config')
 
 module.exports = class {
   constructor (options) {
     this.data = init(options)
+  }
+
+  readConfig () {
+    this.data.config = config(this.data.rootPaths)
+  }
+
+  indexTheme () {
+    this.data.themeCascade = themeCascade(this.data.config)
+    this.data.includes = include(
+      this.data.rootPaths,
+      this.data.themeCascade
+    )
+    this.data.themedCSS = themedCSS(
+      this.data.rootPaths,
+      this.data.themeCascade
+    )
+    this.data.themedJavascript = themedJavascript(
+      this.data.rootPaths,
+      this.data.themeCascade
+    )
   }
 
   // Return all snippets with absolutely no filtering.
@@ -39,7 +58,8 @@ module.exports = class {
       prefix,
       language,
       this.data.composerPackages,
-      this.data.nodePackages
+      this.data.nodePackages,
+      this.data.noPackagesBehavior
     )
   }
 
@@ -51,23 +71,22 @@ module.exports = class {
     )
   }
 
-  getDefinitionPath ({ rootPath, type, definition }) {
-    const rootPaths = isset(rootPath) ? [ rootPath ] : this.data.rootPaths
+  getDefinitionPath ({ type, definition }) {
     let paths = []
     switch (type) {
       case 'include':
-        paths = theming.include(rootPaths)
+        paths = this.data.includes
         break;
-      case 'ThemedCSS':
-        paths = theming.themedcss(rootPaths)
+      case 'themedCSS':
+        paths = this.data.themedCSS
         break;
-      case 'ThemedJavascript':
-        paths = theming.themedcss(rootPaths)
+      case 'themedJavascript':
+        paths = this.data.themedJavascript
         break;
     }
 
     return paths.find(p => {
-      return p.definition === definition
+      return p.definition === definition || p.definition.replace(/\//g, '\\\\') === definition
     }).path
   }
 }

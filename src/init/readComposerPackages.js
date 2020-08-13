@@ -1,4 +1,3 @@
-const path = require('path')
 const fs = require('fs')
 const json = require('json-file')
 const { version } = require('../utilities')

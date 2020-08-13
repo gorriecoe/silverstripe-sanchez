@@ -28,7 +28,8 @@
     "json-file": "^0.1.0",
     "parse-config-file": "^1.0.4",
     "php-parser": "^3.0.1",
-    "read-installed": "^4.0.3"
+    "read-installed": "^4.0.3",
+    "yaml-parser": "^3.5.3"
   },
   "devDependencies": {
     "ava": "^3.10.1",
@@ -44,7 +45,8 @@
   },
   "scripts": {
     "lint": "eslint **/*.js",
-    "lint-fix": "eslint **/*.js --fix"
+    "lint-fix": "eslint **/*.js --fix",
+    "test": "ava"
   },
   "homepage": "https://github.com/gorriecoe/silverstripe-sanchez#readme",
   "main": "src/"

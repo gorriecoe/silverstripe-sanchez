@@ -6,6 +6,7 @@ const fs = require('fs')
 let data = {
   comments: true,
   useItems: true,
+  noPackagesBehavior: true,
   snippets: {}
 }
 

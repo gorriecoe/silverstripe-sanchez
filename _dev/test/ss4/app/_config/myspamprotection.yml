@@ -1,0 +1,12 @@
+---
+Name: myspamprotection
+---
+SilverStripe\SpamProtection\Extension\FormSpamProtectionExtension:
+    default_spam_protector: UndefinedOffset\NoCaptcha\Forms\NocaptchaProtector
+UndefinedOffset\NoCaptcha\Forms\NocaptchaField:
+  site_key: ""
+  secret_key: ""
+  verify_ssl: true
+  default_theme: "light"
+  default_type: "image"
+  default_size: "normal"

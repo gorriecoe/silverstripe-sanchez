@@ -1,0 +1,10 @@
+---
+Name: mytheme
+---
+SilverStripe\View\SSViewer:
+  themes:
+    - '$public'
+    - 'base'
+    - 'simple'
+    - '$default'
+  rewrite_hash_links: false
