@@ -23,6 +23,7 @@ module.exports = (paths, themes) => {
         const name = /([a-zA-Z_]*)\.ss$/.exec(includePath)[1].toLowerCase()
         return {
           name: name,
+          type: 'include',
           path: includePath,
           definition: include,
           body: `<% include ${include} %>`

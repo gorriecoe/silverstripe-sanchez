@@ -13,6 +13,7 @@ module.exports = (paths, themes) => {
           name = name[1]
           return {
             name: name.toLowerCase(),
+            type: 'themedJavascript',
             path: jsPath,
             definition: name,
             body: `<% themedJavascript('${name}') %>`

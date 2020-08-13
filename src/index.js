@@ -14,6 +14,10 @@ module.exports = class {
   }
 
   indexTheme () {
+    if (!this.data.config) {
+      this.readConfig()
+    }
+
     this.data.themeCascade = themeCascade(this.data.config)
     this.data.includes = include(
       this.data.rootPaths,
@@ -27,6 +31,25 @@ module.exports = class {
       this.data.rootPaths,
       this.data.themeCascade
     )
+  }
+
+  buildThemeSnippets () {
+    if (!this.data.themeCascade) {
+      this.indexTheme()
+    }
+
+    this.data.snippets = this.data.snippets.concat([
+      ...this.data.includes,
+      ...this.data.themedCSS,
+      ...this.data.themedJavascript,
+    ].map(theme => {
+      theme.prefix = theme.type + theme.name
+      theme.conditions = {
+        scope: '.text.html.ss',
+        language: 'ss'
+      }
+      return snippets.format.formatSnippet(theme)
+    }))
   }
 
   // Return all snippets with absolutely no filtering.
@@ -72,6 +95,10 @@ module.exports = class {
   }
 
   getDefinitionPath ({ type, definition }) {
+    if (!this.data.themeCascade) {
+      this.indexTheme()
+    }
+
     const definitionAlt = definition.replace(/\//g, '\\\\')
     let paths = []
     switch (type) {

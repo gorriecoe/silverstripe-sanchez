@@ -26,7 +26,6 @@ test('config', t => {
 
 test('theme', t => {
   const sanchez = runInit(SS4Path)
-  sanchez.readConfig()
   sanchez.indexTheme()
   console.log(
     sanchez.data.includes,
@@ -36,6 +35,17 @@ test('theme', t => {
 	t.pass();
 })
 
+test('themesnippets', t => {
+  const sanchez = runInit(SS4Path)
+  sanchez.buildThemeSnippets()
+  console.log(
+    sanchez.snippets({
+      prefix: 'theme',
+      language: 'ss'
+    })
+  )
+	t.pass();
+})
 
 test('definition', t => {
   const sanchez = runInit(SS4Path)

@@ -1,8 +1,9 @@
+const merge = require('deepmerge')
 const finder = require('../finder')
 const readSanchez = require('./readSanchez')
 const readComposerPackages = require('./readComposerPackages')
 const readNodePackages = require('./readNodePackages')
-const formatSnippets = require('../snippets/format')
+const snippets = require('../snippets')
 
 module.exports = (options) => {
   const data = {
@@ -19,7 +20,10 @@ module.exports = (options) => {
     ...options.config
   }
 
-  data.snippets = formatSnippets(data.snippets)
+  data.snippets = snippets.format.formatSnippetsList(merge(
+    snippets.defaults,
+    data.snippets
+  ))
 
   return data
 }

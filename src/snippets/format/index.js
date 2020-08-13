@@ -6,16 +6,10 @@
 const isset = require('isset')
 const merge = require('deepmerge')
 const { split, version, scope, language } = require('../../utilities')
-const defaultSnippets = require('../defaults')
 
 const defaults = {
   composerVersion: '0.0+'
 }
-
-/**
- * Store snippets so we don't need to iterate through snippets again.
- */
-let allSnippetsStore = null
 
 /**
  * Formats each package version to a min and max version.
@@ -42,9 +36,9 @@ const formatPackages = (packages = {}) => {
  * @param prefix
  * @returns String
  */
-const formatPrefix = (name, prefix = name, moduleName, moduleVersion) => {
+const formatPrefix = (name, prefix, moduleName, moduleVersion) => {
   return [
-    prefix.trim()
+    (prefix || name).trim()
       .replace('&', 'and')
       .replace(/[^a-zA-Z0-9_]/g, '')
       .toLowerCase(),
@@ -233,16 +227,7 @@ const formatSnippet = (RAW, snippet) => {
   }
 }
 
-module.exports = (snippets = {}) => {
-  if (allSnippetsStore) {
-    return allSnippetsStore
-  }
-
-  snippets = merge(
-    defaultSnippets,
-    snippets
-  )
-
+const formatSnippetsList = (snippets = {}) => {
   const output = []
 
   for (const name in snippets) {
@@ -300,8 +285,10 @@ module.exports = (snippets = {}) => {
     }
   }
 
-  // Store output so we don't need to iterate through snippets again.
-  allSnippetsStore = output.sort((a, b) => a.name.localeCompare(b.name))
-
   return output
+}
+
+module.exports = {
+  formatSnippetsList: formatSnippetsList,
+  formatSnippet: formatSnippet
 }
