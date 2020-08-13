@@ -72,21 +72,28 @@ module.exports = class {
   }
 
   getDefinitionPath ({ type, definition }) {
+    const definitionAlt = definition.replace(/\//g, '\\\\')
     let paths = []
     switch (type) {
       case 'include':
         paths = this.data.includes
-        break;
+        break
       case 'themedCSS':
         paths = this.data.themedCSS
-        break;
+        break
       case 'themedJavascript':
         paths = this.data.themedJavascript
-        break;
+        break
+      default:
+        return null
     }
 
-    return paths.find(p => {
-      return p.definition === definition || p.definition.replace(/\//g, '\\\\') === definition
-    }).path
+    const foundDefinition = paths.find(p => {
+      return p.definition === definition || p.definition === definitionAlt
+    })
+
+    if (foundDefinition) {
+      return foundDefinition.path
+    }
   }
 }
