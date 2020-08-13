@@ -42,13 +42,14 @@ module.exports = class {
       ...this.data.includes,
       ...this.data.themedCSS,
       ...this.data.themedJavascript,
-    ].map(theme => {
-      theme.prefix = theme.type + theme.name
-      theme.conditions = {
+    ].map(snippet => {
+      snippet.name = `${snippet.type} ${snippet.name}`
+      snippet.prefix = snippet.type + snippet.name
+      snippet.conditions = {
         scope: '.text.html.ss',
         language: 'ss'
       }
-      return snippets.format.formatSnippet(theme)
+      return snippets.format.formatSnippet(snippet)
     }))
   }
 
