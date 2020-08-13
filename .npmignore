@@ -4,6 +4,8 @@
 .idea
 .gitignore
 .editorconfig
+.nvmrc
+.eslintrc
 
 node_modules/
 npm-debug.log
