@@ -99,6 +99,10 @@ module.exports = class {
     if (!this.data.themeCascade) {
       this.indexTheme()
     }
+    
+    if(!definition) {
+      return null
+    }
 
     const definitionAlt = definition.replace(/\//g, '\\\\')
     let paths = []
