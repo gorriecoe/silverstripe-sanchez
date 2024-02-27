@@ -15,12 +15,12 @@ module.exports = (paths = []) => {
   // We accept cson, json or yml formats
   for (const filepath in paths) {
     if (filepath in paths) {
-      if (fs.existsSync(filepath)) {
+      if (fs.existsSync(paths[filepath])) {
         data = merge(
           data,
           parse(
             fs.readFileSync(
-              filepath,
+              paths[filepath],
               {
                 encoding: 'utf-8'
               }
